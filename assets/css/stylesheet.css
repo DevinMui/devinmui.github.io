@@ -2,9 +2,16 @@
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 body {
   font-family: Roboto, Trebuchet;
+  padding-bottom: 60px;
 }
 h1,h2,h3,h4,h5{
   font-family: "Press Start 2P", cursive;
+}
+.roboto {
+  font-family: "Roboto", Trebuchet;
+}
+p {
+  line-height: 1.8;
 }
 .half {
   position: relative;
@@ -26,6 +33,23 @@ a:hover {
 }
 .title:hover {
   color: #333;
+}
+.col-center {
+  float: none;
+  display: block;
+  margin: 30px auto;
+}
+.day {
+  transition: 0.5s ease;
+  color: #FF8D12;
+}
+.night {
+  transition: 0.5s ease;
+  color: midnightblue;
+}
+.hide {
+  transition: 0.5s ease;
+  display: none;
 }
 .fa-github:hover {
   color: #19A347;
@@ -54,9 +78,56 @@ a:hover {
   border-left: 1px #000 solid;
   border-right: 1px #000 solid;
 }
+.pong-title {
+  color: inherit;
+  transition: 0.5s ease;
+}
+.pong-title:hover {
+  color: #6BFF60;
+}
 .instruction {
   display:block;
   margin: 20px auto;
   text-align: center;
   font-family: "Press Start 2P", cursive;
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#talk {
+  color: inherit;
+  transition: 0.5s ease;
+}
+#talk:hover {
+  color: #EF6E73;
+}
+#projects {
+  color: inherit;
+  transition: 0.5s ease;
+}
+#projects:hover {
+  color: #CC33FF;
+}
+#shades {
+  color: inherit;
+  transition: 0.5s ease;
+}
+#shades:hover {
+  color: #66FFFF;
+}
+#rapiflash {
+  color: inherit;
+  transition: 0.5s ease;
+}
+#rapiflash:hover {
+  color: #009900;
+}
+#groupsr {
+  color: inherit;
+  transition: 0.5s ease;
+}
+#groupsr:hover {
+  color: #FF6600;
 }

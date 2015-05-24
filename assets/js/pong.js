@@ -1,7 +1,7 @@
 var animate = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
         window.setTimeout(callback, 1000 / 60)
     };
-var canvas = document.createElement("canvas");
+var canvas = document.getElementById("canvas");
 canvas.className = "pong";
 var width = 150;
 var height = 300;
@@ -159,7 +159,6 @@ Ball.prototype.update = function (paddle1, paddle2) {
     }
 };
 
-document.body.appendChild(canvas);
 animate(step);
 
 window.addEventListener("keydown", function (event) {
@@ -169,9 +168,3 @@ window.addEventListener("keydown", function (event) {
 window.addEventListener("keyup", function (event) {
     delete keysDown[event.keyCode];
 });
-
-var p = document.createElement("p");
-p.className = "instruction";
-var node = document.createTextNode("You will not win");
-p.appendChild(node);
-document.body.appendChild(p);

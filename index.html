@@ -1,6 +1,12 @@
 <!doctype html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Devin Mui is Devin Mui">
+	<meta name="keywords" content="Devin, Developer, Pong, Code, Mui, Portfolio, Programming, Websites, Design, School">
+	<meta name="author" content="Devin Mui">
 	<title>Devin Mui</title>
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
@@ -11,17 +17,53 @@
 		<h1><a href="https://github.com/devinmui" class="title" target="_blank">Devin Mui</a></h1>
 	</div>
 	<div class="container">
-		<div class="profile">
-
-		</div>
-		<div class="text-center">
-			<h1 class="icons"><a href="mailto: devinmui@yahoo.com" class="fa fa-envelope-o" title="devinmui@yahoo.com"></a><a href="https://github.com/devinmui" class="fa fa-github" title="Devin Mui's GitHub"></a><a href="https://linkedin.com/in/devinmui" class="fa fa-linkedin" title="Devin Mui's LinkedIn"></a><a href="https://facebook.com/devin.mui" class="fa fa-facebook" title="Devin Mui's Facebook"></a></h1>
+		<div class="col-md-6 col-center">
+			<div class="profile" id="personalities">
+				<h3 class="text-center day" id="day">Student in the Day <i class="fa fa-sun-o"></i></h3>
+				<h3 class="text-center night hide" id="night">Programmer at Night <i class="fa fa-moon-o"></i></h3>
+				<div class="col-center">
+					<p>My name's Devin Mui. I'm a high school freshman but when I'm not in school, I'm often on a computer, programming. I know Ruby on Rails, HTML/CSS, Python, and C++. I also know how to use Autodesk Inventor and I am learning how to use the MEAN stack right now. Well, that's all for my skills! Here! Play a game I made:</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="container" style="margin-top: 50px;">
-		<h1 class="text-center">PONG</h1>
+	<div class="container">
+		<h1 class="text-center pong-title">PONG</h1>
+		<canvas id="canvas"></canvas>
+		<h3 class="text-center" style="margin-top: 40px;" id="projects">I'm working on...<i class="fa fa-cog"></i></h3>
+		<div class="col-md-8 col-center">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<img src="./assets/images/notification.png" class="img-center img-responsive"/>
+					<h3 id="rapiflash">Rapiflash</h3>
+					<p>A device which notifies users of possible floods near them (many different languages involved)</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="./assets/images/book.png" class="img-center img-responsive" style="width: 50%; margin-top: 40px; margin-bottom: 40px;"/>
+					<h3 id="shades">Shades</h3>
+					<p>Learning machine learning with Python</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<img src="./assets/images/flat-people.png" class="img-center img-responsive" style="margin-top: 20px;margin-bottom: 30px;"/>
+					<h3 id="groupsr">Groupsr</h3>
+					<p>A grouping social platform made in Ruby on Rails</p>
+				</div>
+			</div>
+		</div>
+		<h3 class="text-center" style="margin-top:40px;" id="talk">Let's talk!</h3><div class="text-center"><h1 class="icons"><a href="mailto: devinmui@yahoo.com" class="fa fa-envelope-o" title="devinmui@yahoo.com"></a><a href="https://github.com/devinmui" class="fa fa-github" title="Devin Mui's GitHub"></a><a href="https://linkedin.com/in/devinmui" class="fa fa-linkedin" title="Devin Mui's LinkedIn"></a><a href="https://facebook.com/devin.mui" class="fa fa-facebook" title="Devin Mui's Facebook"></a></h1></div>
 	</div>
 	<script src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/pong.js"></script>
+	<script>
+	$('#personalities').mouseenter(function(){
+		$('#day').addClass('hide',500);
+		$('#night').removeClass('hide',500);
+	});
+	$('#personalities').mouseleave(function(){
+		$('#night').addClass('hide',500);
+		$('#day').removeClass('hide',500);
+	});
+	console.log("No easter eggs here");
+	</script>
 </body>
 </html>
