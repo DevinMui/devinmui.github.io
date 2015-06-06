@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 body {
-  font-family: Roboto, Trebuchet;
-  padding-bottom: 60px;
+  font-family: Roboto, Trebuchet; 
 }
 h1,h2,h3,h4,h5{
   font-family: "Press Start 2P", cursive;
@@ -130,4 +129,11 @@ a:hover {
 }
 #groupsr:hover {
   color: #FF6600;
+}
+#footer {
+  width:100%;
+  padding-top:3%;
+  padding-bottom: 3%;
+  background: #707070;
+  margin-top: 60px;
 }
