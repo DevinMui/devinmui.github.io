@@ -1,150 +1,64 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
-body {
-  font-family: Roboto, Trebuchet; 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html,body {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Open Sans";
 }
-h1,h2,h3,h4,h5{
-  font-family: "Press Start 2P", cursive;
-}
-.roboto {
-  font-family: "Roboto", Trebuchet;
-}
-p {
-  line-height: 1.8;
-}
-.half {
-  position: relative;
-  top:0;left:0;right:0;
-  padding-top:1%;padding-bottom:1%;
-  background-color: #BF3737;
-  text-align: center;
+.center {
   color: #fff;
-  margin-bottom: 2%;
+  position: absolute;
+  width: 100%;
+  top:25%;left:0;right:0;bottom:20%;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: 0.5s ease;
+.nyan-mode-1 {
+  background-image: url(../images/nyan-bg.gif);
 }
-a:hover {
-  text-decoration: none;
-  color: inherit;
+.nyan-mode-2 {
+  background-image: url(../images/lol.gif);
 }
-.title:hover {
-  color: #333;
+.nyan-mode-3 {
+  background-image: url(../images/blue.gif);
 }
-.col-center {
-  float: none;
-  display: block;
-  margin: 30px auto;
+.nyan-mode-4 {
+  background-image: url(../images/over9000.gif);
 }
-.day {
-  transition: 0.5s ease;
-  color: #FF8D12;
+.nyan-mode-5 {
+  background-image: url(../images/reverse.gif);
 }
-.night {
-  transition: 0.5s ease;
-  color: midnightblue;
+.nyan-mode-6 {
+  background-image: url(../images/erlich.gif);
 }
-.hide {
-  transition: 0.5s ease;
-  display: none;
+.computer {
+  background-image: url(../images/computer.jpg);
 }
-.fa-github:hover {
-  color: #19A347;
-}
-.fa-envelope-o:hover {
-  color: #6CA7FF;
-}
-.fa-linkedin:hover {
-  color: #507BBC;
-}
-.fa-facebook:hover {
-  color: #1975FF;
-}
-.icons {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.icons > a {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.pong {
-  display: block;
-  margin: 0 auto;
-  border-left: 1px #000 solid;
-  border-right: 1px #000 solid;
-}
-.pong-title {
-  color: inherit;
-  transition: 0.5s ease;
-}
-.pong-title:hover {
-  color: #6BFF60;
-}
-.instruction {
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  font-family: "Press Start 2P", cursive;
-}
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#talk {
-  color: inherit;
-  transition: 0.5s ease;
-}
-<<<<<<< HEAD
-#talk:hover {
-  color: #EF6E73;
-=======
 .back {
   background-image: url(../images/code.jpg);
 }
 .design {
-  background-image: url(../images/d.jpg);
+  background-image: url(../images/design.jpg);
 }
 .develop {
-  background-image: url(../images/design.jpg);
->>>>>>> cb25225... foo
+  background-image: url(../images/develop.jpg);
 }
-#projects {
-  color: inherit;
-  transition: 0.5s ease;
+.fixed-bg {
+  text-shadow: 3px 3px 1px #000;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-#projects:hover {
-  color: #CC33FF;
+.scroll-text {
+  min-height: 50%;
+  padding-top:5%;
 }
-#shades {
-  color: inherit;
-  transition: 0.5s ease;
+.scrolling-bg {
+  position: relative;
+  height: 100%;
 }
-#shades:hover {
-  color: #66FFFF;
+h1 {
+  font-size: 72px;
 }
-#rapiflash {
-  color: inherit;
-  transition: 0.5s ease;
-}
-#rapiflash:hover {
-  color: #009900;
-}
-#groupsr {
-  color: inherit;
-  transition: 0.5s ease;
-}
-#groupsr:hover {
-  color: #FF6600;
-}
-#footer {
-  width:100%;
-  padding-top:3%;
-  padding-bottom: 3%;
-  background: #707070;
-  margin-top: 60px;
+h3 {
+  font-size: 36px;
 }
