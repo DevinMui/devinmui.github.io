@@ -99,8 +99,19 @@ a:hover {
   color: inherit;
   transition: 0.5s ease;
 }
+<<<<<<< HEAD
 #talk:hover {
   color: #EF6E73;
+=======
+.back {
+  background-image: url(../images/code.jpg);
+}
+.design {
+  background-image: url(../images/d.jpg);
+}
+.develop {
+  background-image: url(../images/design.jpg);
+>>>>>>> cb25225... foo
 }
 #projects {
   color: inherit;
