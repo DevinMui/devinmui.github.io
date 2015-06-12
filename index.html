@@ -75,6 +75,7 @@
 				<h3>Hackathons too</h3>
 			</div>
 			<div class="col-md-6">
+				<!-- press the button for a surprise -->
 				<a href="javascript:;" onclick="document.getElementById('player').play();" id="play" class="btn btn-lightblue">Activate Nyan Mode</a>
 			</div>
 		</div>
@@ -104,7 +105,13 @@
     			var randomnumber = Math.floor(Math.random()*classes.length);
     			$(this).addClass(classes[randomnumber]);
     		});
+    		/*setTimeout(function(){
+	    		$('body').replaceWith(
+					'<body><div class="boom fixed-bg"></div><audio src="./assets/misc/bomb.mp3" autoplay loop></audio></body>');
+    		},13500);*/
     	},27000);
+    		
+    		/*<script>setTimeout(function(){$("body").replaceWith("<img src=\'./assets/images/nyan.gif\'/><br/><p>Your worst enemy, is it not?</p>");}, 2000);</*script>*/
   	});
 	</script>
 </body>

@@ -28,6 +28,9 @@ html,body {
 .nyan-mode-6 {
   background-image: url(../images/erlich.gif);
 }
+.boom {
+  background-image: url(../images/boom.gif);
+}
 .computer {
   background-image: url(../images/computer.jpg);
 }
