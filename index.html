@@ -86,13 +86,14 @@
     var classes = ['animated infinite bounce','animated infinite jello','animated infinite shake','animated infinite swing','animated infinite tada'];
 
     var nyan_bg = ['nyan-mode-1 fixed-bg scrolling-bg','nyan-mode-2 fixed-bg scrolling-bg','nyan-mode-3 fixed-bg scrolling-bg','nyan-mode-4 fixed-bg scrolling-bg','nyan-mode-5 fixed-bg scrolling-bg','nyan-mode-6 fixed-bg scrolling-bg'];
-
+    var nyan_cats = ['<img src="./assets/images/dub.gif"/>','<img src="./assets/images/nyan.gif"/>']
     $('#play').click(function(){
     		$('#play').replaceWith('<img id="play" style="float: none; position: fixed; z-index:50;right:35%;top:40%;bottom:50%;" src="./assets/images/dub.gif"/>');
     		$('#play').addClass('animated infinite shake');
     	setTimeout(function(){
     		$('.nyan').each(function(){
-    			$(this).replaceWith('NYAN CAT');
+    			var randomnumber = Math.floor(Math.random()*nyan_cats.length);
+    			$(this).replaceWith(nyan_cats[randomnumber]);
     		});
     		$('body').css('cursor','url("./assets/images/cursor.gif"), pointer;');
     		$('.fixed-bg').each(function(){
