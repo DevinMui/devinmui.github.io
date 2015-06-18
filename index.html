@@ -83,37 +83,44 @@
 	<audio id="player" src="./assets/misc/dub.mp3" loop></audio>
 	<script src="./assets/js/jquery.min.js"></script>
 	<script>
-    var classes = ['animated infinite bounce','animated infinite jello','animated infinite shake','animated infinite swing','animated infinite tada'];
+		var classes = ['animated infinite bounce','animated infinite jello','animated infinite shake','animated infinite swing','animated infinite tada'];
 
-    var nyan_bg = ['nyan-mode-1 fixed-bg scrolling-bg','nyan-mode-2 fixed-bg scrolling-bg','nyan-mode-3 fixed-bg scrolling-bg','nyan-mode-4 fixed-bg scrolling-bg','nyan-mode-5 fixed-bg scrolling-bg','nyan-mode-6 fixed-bg scrolling-bg'];
-    var nyan_cats = ['<img src="./assets/images/dub.gif"/>','<img src="./assets/images/nyan.gif"/>']
-    $('#play').click(function(){
-    		$('#play').replaceWith('<img id="play" style="float: none; position: fixed; z-index:50;right:35%;top:40%;bottom:50%;" src="./assets/images/dub.gif"/>');
-    		$('#play').addClass('animated infinite shake');
-    	setTimeout(function(){
-    		$('.nyan').each(function(){
-    			var randomnumber = Math.floor(Math.random()*nyan_cats.length);
-    			$(this).replaceWith(nyan_cats[randomnumber]);
-    		});
-    		$('body').css('cursor','url("./assets/images/cursor.gif"), pointer;');
-    		$('.fixed-bg').each(function(){
-    			var randomnumber = Math.floor(Math.random()*nyan_bg.length);
-    			$(this).removeClass().addClass(nyan_bg[randomnumber]);
-    		});
-    		$('#devin').replaceWith('<img src="./assets/images/nyan.gif"/>');
-    		$('#devin-coder').replaceWith('<img src="./assets/images/nyan.gif"/>');
-    		$('h1,h3').each(function(){
-    			var randomnumber = Math.floor(Math.random()*classes.length);
-    			$(this).addClass(classes[randomnumber]);
-    		});
-    		/*setTimeout(function(){
-	    		$('body').replaceWith(
-					'<body><div class="boom fixed-bg"></div><audio src="./assets/misc/bomb.mp3" autoplay loop></audio></body>');
-    		},13500);*/
-    	},27000);
-    		
-    		/*<script>setTimeout(function(){$("body").replaceWith("<img src=\'./assets/images/nyan.gif\'/><br/><p>Your worst enemy, is it not?</p>");}, 2000);</*script>*/
-  	});
+		var nyan_bg = ['nyan-mode-1 fixed-bg scrolling-bg','nyan-mode-2 fixed-bg scrolling-bg','nyan-mode-3 fixed-bg scrolling-bg','nyan-mode-4 fixed-bg scrolling-bg','nyan-mode-5 fixed-bg scrolling-bg','nyan-mode-6 fixed-bg scrolling-bg'];
+		var nyan_cats = [
+			'<img src="./assets/images/dub.gif" class="fly-1"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-1"/>',
+			'<img src="./assets/images/dub.gif" class="fly-2"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-2"/>',
+			'<img src="./assets/images/dub.gif" class="fly-3"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-3"/>',
+			'<img src="./assets/images/dub.gif" class="fly-4"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-4"/>',
+			'<img src="./assets/images/dub.gif" class="fly-5"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-5"/>',
+			'<img src="./assets/images/dub.gif" class="fly-6"/>',
+			'<img src="./assets/images/nyan.gif" class="fly-6"/>'
+		]
+		$('#play').click(function(){
+				$('#play').replaceWith('<img id="play" style="float: none; position: fixed; z-index:50;right:35%;top:40%;bottom:50%;" src="./assets/images/dub.gif"/>');
+				$('#play').addClass('animated infinite shake');
+			setTimeout(function(){
+				$('body').css('cursor','url("./assets/images/cursor.gif"), pointer;');
+				$('.fixed-bg').each(function(){
+					var randomnumber = Math.floor(Math.random()*nyan_bg.length);
+					$(this).removeClass().addClass(nyan_bg[randomnumber]);
+				});
+				$('.nyan').each(function(){
+					var randomnumber = Math.floor(Math.random()*nyan_cats.length);
+					$(this).replaceWith(nyan_cats[randomnumber]);
+				});
+				$('#devin').replaceWith('<img src="./assets/images/nyan.gif"/>');
+				$('#devin-coder').replaceWith('<img src="./assets/images/nyan.gif"/>');
+				$('h1,h3').each(function(){
+					var randomnumber = Math.floor(Math.random()*classes.length);
+					$(this).addClass(classes[randomnumber]);
+				});
+			},27000);
+		});
 	</script>
 </body>
 </html>

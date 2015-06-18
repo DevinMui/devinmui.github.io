@@ -28,6 +28,64 @@ html,body {
 .nyan-mode-6 {
   background-image: url(../images/erlich.gif);
 }
+.fly-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: fly 0.5s linear infinite;
+  z-index: 100000;
+}
+.fly-2 {
+  position: fixed;
+  top: 100%;
+  left:0%;
+  animation: flying 1.2s linear infinite;
+  z-index: 100000;
+}
+.fly-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: fly 1s linear infinite;
+  z-index: 100000;
+}
+.fly-4 {
+  position: fixed;
+  top: 100%;
+  left:0%;
+  animation: flying 2s linear infinite;
+  z-index: 100000;
+}
+.fly-5 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: flyinging 0.3s linear infinite reverse;
+  z-index: 100000;
+}
+.fly-6 {
+  position: fixed;
+  top: 100%;
+  left:0%;
+  animation: flyinginging 3s linear infinite;
+  z-index: 100000;
+}
+@keyframes fly {
+  from {top:0; left:0;}
+  to {top: 100%;left:90%;}
+}
+@keyframes flying {
+  from {top:100%;left:0%;}
+  to {top:0%;left:100%;}
+}
+@keyframes flyinging {
+  from {top:25; left:40%;}
+  to {top: 75%;left:25%;}
+}
+@keyframes flyinginging {
+  from {top:0%;left:90%;}
+  to {top:100%;left:0%;}
+}
 .boom {
   background-image: url(../images/boom.gif);
 }
