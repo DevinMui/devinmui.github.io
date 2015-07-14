@@ -10,117 +10,65 @@
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Devin Mui">
 	<meta property=tent="Devin Mui is Devin Mui">
-	<meta property="og:image" content="https://devinmui.me/assets/images/flat-people.png">
 	<title>Devin Mui</title>
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="./assets/css/bootstrap-buttonify.css" rel="stylesheet"/>
 	<link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
-	<link href="./assets/css/stylesheet.css" rel="stylesheet"/>
 	<link href="./assets/css/animate.min.css" rel="stylesheet"/>
+	<link href="./assets/css/stylesheet.css" rel="stylesheet"/>
 </head>
 <body>
-	<div class="computer fixed-bg">
-		<div class="center">
-			<div class="container">
-				<div style="float:right">
-					<h1><span class="nyan">Yo!</span> I'm <span style="color:#66CCFF" id="devin">Devin</span></h1>
+	<div class="sidebar">
+		<div class="container">
+			<div class="sidebar-nav">
+					<h3 class="sidebar-logo"><a href="#">DM</a></h3>
+					<h3><a href="#"><i class="fa fa-briefcase"></i></a></h3>
+					<h3><a href="#"><i class="fa fa-terminal"></i></a></h3>
+					<h3><a href="#"><i class="fa fa-envelope"></i></a></h3>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="scroll-text">
+	<div class="container" style="padding-top:25px;">
+		<div class="content">
+			<div class="row">
+				<div class="col-md-6">
+					<h3 style="color:#33AD5C;"><span id="name"></span></h3>
+					<div id="desc" class="row" style="display:none">
+						<p style="line-height:2">Hi! I'm Devin. I'm an upcoming high school sophomore attending Dublin High School. This website, I designed and programmed with Javascript and HTML/CSS. Not only can I make this pretty, I can make them dynamic and store data with Ruby on Rails. I've also created a few Android applications (you can view and download them on my <a href="https://www.github.com/devinmui/">Github</a>). I'm currently unemployed (no duh) but I'd be happy to take on freelancing jobs as well as full time job offers.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img src="./assets/images/chimehacks2.jpg" id="chimehacks" class="img-responsive" style="display:none" />
+					<p id="chimehacks-desc" style="display:none;margin-top:10px;">That's me, the gentleman with the Facebook hoodie</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
 		<div class="container">
-			<h1 style="text-align: right">Brief description</h1>
-			<h3 style="line-height: 1.5;">[ <span style="color:#33CC33">"<span class="nyan">programmer</span>"</span> : <span style="color:#CC66FF">true</span>, <span style="color:#33CC33">"<span class="nyan">ruby</span>"</span> : <span style="color:#CC66FF">true</span>, <span style="color:#33CC33">"<span class="nyan">social_life</span>"</span> : <span style="color:#CC66FF"><span class="nyan">false</span></span> ]</h3>
-		</div>
-	</div>
-	<div class="design scrolling-bg fixed-bg">
-		<div class="center">
-			<div class="container">
-				<h1><span style="color:#FF3333">if</span> <span id="devin-coder">devin</span>.<span style="color:#33CC33"><span class="nyan">coder</span></span> == <span style="color:#CC66FF">false</span></h1>
+			<div class="social-nav text-center">
+				<h3><a href="https://www.twitter.com/idonthaveatwitter:("><i class="fa fa-twitter"></i></a></h3>
+				<h3><a href="https://www.facebook.com/devin.mui"><i class="fa fa-facebook"></i></a></h3>
+				<h3><a href="https://www.github.com/devinmui"><i class="fa fa-github"></i></a></h3>
+				<h4 class="love">Created with <i class="fa fa-heart"></i> by Devin Mui</h4>
 			</div>
 		</div>
 	</div>
-	<div class="scroll-text">
-		<div class="container">
-			<h1><span class="nyan">I</span> design as well</h1>
-			<h3>You know, like this <span class="nyan">website</span></h3>
-		</div>
-	</div>
-	<div class="back scrolling-bg fixed-bg">
-		<div class="center">
-			<div class="container">
-				<h1><span class="nyan">Back end</span></h1>
-			</div>
-		</div>
-	</div>
-	<div class="scroll-text">
-		<div class="container text-center">
-			<h1><span class="nyan">Ruby on Rails</span></h1>
-			<h3>The only real dev language</h3>
-		</div>
-	</div>
-	<div class="develop scrolling-bg fixed-bg">
-		<div class="center">
-			<div class="container">
-				<h1 style="float:right">Hackathons</h1>
-				<h3 style="float:right">Hacking</h3>
-			</div>
-		</div>
-	</div>
-	<div class="scroll-text">
-		<div class="container">
-			<div class="col-md-6">
-				<h1>I <i class="fa fa-heart-o" style="color:red;"></i> Developing</h1>
-				<h3>Hackathons too</h3>
-			</div>
-			<div class="col-md-6">
-				<!-- press the button for a surprise -->
-				<a href="javascript:;" onclick="document.getElementById('player').play();" id="play" class="btn btn-lightblue">Activate Nyan Mode</a>
-			</div>
-		</div>
-	</div>
-	<audio id="player" src="./assets/misc/dub.mp3" loop></audio>
 	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/typed.min.js"></script>
 	<script>
-		var classes = ['animated infinite bounce','animated infinite jello','animated infinite shake','animated infinite swing','animated infinite tada'];
-
-		var nyan_bg = ['nyan-mode-1 fixed-bg scrolling-bg','nyan-mode-2 fixed-bg scrolling-bg','nyan-mode-3 fixed-bg scrolling-bg','nyan-mode-4 fixed-bg scrolling-bg','nyan-mode-5 fixed-bg scrolling-bg','nyan-mode-6 fixed-bg scrolling-bg'];
-		var nyan_cats = [
-			'<img src="./assets/images/dub.gif" class="fly-1"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-1"/>',
-			'<img src="./assets/images/dub.gif" class="fly-2"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-2"/>',
-			'<img src="./assets/images/dub.gif" class="fly-3"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-3"/>',
-			'<img src="./assets/images/dub.gif" class="fly-4"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-4"/>',
-			'<img src="./assets/images/dub.gif" class="fly-5"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-5"/>',
-			'<img src="./assets/images/dub.gif" class="fly-6"/>',
-			'<img src="./assets/images/nyan.gif" class="fly-6"/>'
-		]
-		$('#play').click(function(){
-				$('#play').replaceWith('<img id="play" style="float: none; position: fixed; z-index:50;right:35%;top:40%;bottom:50%;" src="./assets/images/dub.gif"/>');
-				$('#play').addClass('animated infinite shake');
-			setTimeout(function(){
-				$('body').css('cursor','url("./assets/images/cursor.gif"), pointer;');
-				$('.fixed-bg').each(function(){
-					var randomnumber = Math.floor(Math.random()*nyan_bg.length);
-					$(this).removeClass().addClass(nyan_bg[randomnumber]);
+	$('#name').typed({
+		strings: ["Devin Mui, ^500 <br/>Programmer<br/> ^500 Designer<br/> ^500 High School Student"],
+		typeSpeed: 25,
+		onStringTyped: function(){
+			$('#chimehacks').fadeIn(1000,function(){
+				$('#chimehacks-desc').fadeIn(1000,function(){
+					$('#desc').fadeIn(1000);
 				});
-				$('.nyan').each(function(){
-					var randomnumber = Math.floor(Math.random()*nyan_cats.length);
-					$(this).replaceWith(nyan_cats[randomnumber]);
-				});
-				$('#devin').replaceWith('<img src="./assets/images/nyan.gif"/>');
-				$('#devin-coder').replaceWith('<img src="./assets/images/nyan.gif"/>');
-				$('h1,h3').each(function(){
-					var randomnumber = Math.floor(Math.random()*classes.length);
-					$(this).addClass(classes[randomnumber]);
-				});
-			},27000);
-		});
+			});
+		}
+	});
 	</script>
 </body>
 </html>
