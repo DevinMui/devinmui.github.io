@@ -12,63 +12,25 @@
 	<meta property=tent="Devin Mui is Devin Mui">
 	<title>Devin Mui</title>
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet"/>
-	<link href="./assets/css/bootstrap-buttonify.css" rel="stylesheet"/>
 	<link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
 	<link href="./assets/css/animate.min.css" rel="stylesheet"/>
+	<link href="./assets/css/vex-theme-default.css" rel="stylesheet"/>
 	<link href="./assets/css/stylesheet.css" rel="stylesheet"/>
 </head>
 <body>
-	<div class="sidebar">
-		<div class="container">
-			<div class="sidebar-nav">
-					<h3 class="sidebar-logo"><a href="#">DM</a></h3>
-					<h3><a href="#"><i class="fa fa-briefcase"></i></a></h3>
-					<h3><a href="#"><i class="fa fa-terminal"></i></a></h3>
-					<h3><a href="#"><i class="fa fa-envelope"></i></a></h3>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container" style="padding-top:25px;">
-		<div class="content">
-			<div class="row">
-				<div class="col-md-6">
-					<h3 style="color:#33AD5C;"><span id="name"></span></h3>
-					<div id="desc" class="row" style="display:none">
-						<p style="line-height:2">Hi! I'm Devin. I'm an upcoming high school sophomore attending Dublin High School. This website, I designed and programmed with Javascript and HTML/CSS. Not only can I make this pretty, I can make them dynamic and store data with Ruby on Rails. I've also created a few Android applications (you can view and download them on my <a href="https://www.github.com/devinmui/">Github</a>). I'm currently unemployed (no duh) but I'd be happy to take on freelancing jobs as well as full time job offers.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<img src="./assets/images/chimehacks2.jpg" id="chimehacks" class="img-responsive" style="display:none" />
-					<p id="chimehacks-desc" style="display:none;margin-top:10px;">That's me, the gentleman with the Facebook hoodie</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="social-nav text-center">
-				<h3><a href="https://www.twitter.com/idonthaveatwitter:("><i class="fa fa-twitter"></i></a></h3>
-				<h3><a href="https://www.facebook.com/devin.mui"><i class="fa fa-facebook"></i></a></h3>
-				<h3><a href="https://www.github.com/devinmui"><i class="fa fa-github"></i></a></h3>
-				<h4 class="love">Created with <i class="fa fa-heart"></i> by Devin Mui</h4>
-			</div>
+	<div class="container">
+		<div class="col-md-6" style="float:none;margin:0 auto;">
+			<img src="./assets/images/pikachu.gif" class="img-responsive"/>
 		</div>
 	</div>
 	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/typed.min.js"></script>
+	<script src="./assets/js/vex.combined.min.js"></script>
 	<script>
-	$('#name').typed({
-		strings: ["Devin Mui, ^500 <br/>Programmer<br/> ^500 Designer<br/> ^500 High School Student"],
-		typeSpeed: 25,
-		onStringTyped: function(){
-			$('#chimehacks').fadeIn(1000,function(){
-				$('#chimehacks-desc').fadeIn(1000,function(){
-					$('#desc').fadeIn(1000);
-				});
-			});
-		}
-	});
+		vex.defaultOptions.className = 'vex-theme-default';
+		vex.dialog.alert({
+			message: "A wild Pikachu appeared!",
+
+		});
 	</script>
 </body>
 </html>
