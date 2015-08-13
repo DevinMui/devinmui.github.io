@@ -19,21 +19,30 @@
 </head>
 <body>
 	<div class="container">
-		<div class="col-md-6" style="float:none;margin:0 auto;">
 			<img src="./assets/images/pikachu.gif" class="img-responsive"/>
-		</div>
 	</div>
-	<audio autoplay loop>
+	<!--<audio id="battle" autoplay loop>
 		<source src="./assets/misc/pokemon.mp3" type="audio/mpeg"/>
-	</audio>
+	</audio>-->
 	<script src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/vex.combined.min.js"></script>
-	<script>
+	<!--<script>
 		vex.defaultOptions.className = 'vex-theme-default';
 		vex.dialog.alert({
 			message: "A wild Pikachu appeared!",
 
 		});
+	</script>-->
+	<script>
+		battle = new Audio('./assets/misc/pokemon.mp3');
+		battle.addEventListener('ended', function() {
+		    this.currentTime = 4.3;
+				this.volume = 0.03;
+		    this.play();
+		}, false);
+		battle.duration = 80;
+		battle.volume = 0.03;
+		battle.play();
 	</script>
 </body>
 </html>
