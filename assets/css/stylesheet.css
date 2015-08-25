@@ -1,125 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Sarala);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-html, body {
-  height: 100%;
-  font-family: Sarala;
-  background: #303030;
-  color: #777; }
+body {
+  font-family: "Montserrat"; }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 5%;
-  color: #777;
-  background: #292929; }
-  .sidebar .sidebar-nav a {
-    color: #777;
-    text-decoration: none;
-    transition: 1s ease; }
-    .sidebar .sidebar-nav a:hover {
-      color: #33AD5C; }
-  .sidebar .sidebar-nav .sidebar-logo {
-    font-family: Lobster, cursive;
-    margin-bottom: 40px;
-    transition: 1s ease; }
-    .sidebar .sidebar-nav .sidebar-logo:hover {
-      color: #33AD5C; }
-    .sidebar .sidebar-nav .sidebar-logo a {
-      border-bottom: 3px solid green; }
-  @media screen and (max-width: 640px) {
-    .sidebar {
-      width: 10%; } }
-  @media screen and (max-width: 468px) {
-    .sidebar {
-      width: 15%; } }
-  @media screen and (max-width: 355px) {
-    .sidebar {
-      width: 20%; } }
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+.text-center {
   margin: 0 auto;
-  overflow: hidden; }
-  .footer .social-nav {
-    width: 100%;
-    margin: 0 auto; }
-    .footer .social-nav h3 {
-      display: inline-block;
-      margin-right: 10px; }
-    .footer .social-nav a {
-      color: #777; }
-    .footer .social-nav .love {
-      display: block; }
-    .footer .social-nav .fa-twitter {
-      transition: 1s ease; }
-      .footer .social-nav .fa-twitter:hover {
-        color: #2AA9E0; }
-    .footer .social-nav .fa-facebook {
-      transition: 1s ease; }
-      .footer .social-nav .fa-facebook:hover {
-        color: #3B579D; }
-    .footer .social-nav .fa-github {
-      transition: 1s ease; }
-      .footer .social-nav .fa-github:hover {
-        color: #33AD5C; }
-  @media screen and (max-width: 640px) {
-    .footer {
-      display: none; } }
-  @media screen and (max-width: 468px) {
-    .footer {
-      display: none; } }
-  @media screen and (max-width: 355px) {
-    .footer {
-      display: none; } }
+  text-align: center; }
 
-#name {
-  line-height: 1.5; }
+.gutter {
+  margin: 0 1rem; }
 
-.content {
-  margin-left: 10%; }
-  @media screen and (max-width: 640px) {
-    .content {
-      margin-left: 15%; } }
-  @media screen and (max-width: 468px) {
-    .content {
-      margin-left: 20%; } }
-  @media screen and (max-width: 355px) {
-    .content {
-      margin-left: 25%; } }
+a {
+  color: #66CCFF; }
 
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 1.5s infinite;
-  -moz-animation: blink 1.5s infinite;
-  animation: blink 1.5s infinite; }
+#contacts a {
+  color: inherit;
+  transition: 1s ease; }
 
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+#contacts a:hover {
+  color: #66CCFF; }
 
 /*# sourceMappingURL=stylesheet.css.map */
