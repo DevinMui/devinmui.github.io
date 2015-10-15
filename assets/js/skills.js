@@ -1,5 +1,5 @@
 var circle = $('#rails').circleProgress({
-  value: 0.9,
+  value: 1,
   size: 100,
   fill: {
     gradient: ["#66CCFF"]
@@ -10,7 +10,7 @@ circle.on('circle-animation-progress', function(e, v) {
   var obj = $(this).data('circle-progress'),
       ctx = obj.ctx,
       s = obj.size,
-      sv = (90 * v).toFixed() + "%",
+      sv = (100 * v).toFixed() + "%",
       fill = obj.arcFill;
 
   ctx.save();
@@ -23,7 +23,7 @@ circle.on('circle-animation-progress', function(e, v) {
 });
 
 var circle = $('#android').circleProgress({
-  value: 0.5,
+  value: 0.7,
   size: 100,
   fill: {
     gradient: ["#66CCFF"]
@@ -34,7 +34,7 @@ circle.on('circle-animation-progress', function(e, v) {
   var obj = $(this).data('circle-progress'),
       ctx = obj.ctx,
       s = obj.size,
-      sv = (50 * v).toFixed() + "%",
+      sv = (70 * v).toFixed() + "%",
       fill = obj.arcFill;
 
   ctx.save();
@@ -71,7 +71,7 @@ circle.on('circle-animation-progress', function(e, v) {
 });
 
 var circle = $('#js').circleProgress({
-  value: 0.35,
+  value: 0.5,
   size: 100,
   fill: {
     gradient: ["#66CCFF"]
@@ -82,7 +82,7 @@ circle.on('circle-animation-progress', function(e, v) {
   var obj = $(this).data('circle-progress'),
       ctx = obj.ctx,
       s = obj.size,
-      sv = (35 * v).toFixed() + "%",
+      sv = (5 * v).toFixed() + "%",
       fill = obj.arcFill;
 
   ctx.save();
