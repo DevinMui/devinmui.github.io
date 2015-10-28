@@ -1,176 +1,346 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta natent="Devin Mui is Devin Mui">
-	<meta name="keywords" content="Devin, Developer, Pong, Code, Mui, Portfolio, Programming, Websites, Design, School">
-	<meta name="author" content="Devin Mui">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Devin Mui">
-	<meta property=tent="Devin Mui is Devin Mui">
-	<title>Devin Mui</title>
-	<link href="./assets/css/pure-min.css" rel="stylesheet"/>
-	<link href="./assets/css/grids-responsive-min.css" rel="stylesheet"/>
-	<link href="./assets/css/sidemenu.css" rel="stylesheet"/>
-	<link href="./assets/css/font-awesome.min.css" rel="stylesheet"/>
-	<link href="./assets/css/stylesheet.css" rel="stylesheet"/>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Agency - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+
 </head>
-<body>
-	<div id="layout">
-		<a href="#menu" id="menuLink" class="menu-link">
-			<span></span>
-		</a>
 
-		<div id="menu">
-			<div class="pure-menu">
-				<a class="pure-menu-heading" href="#top">Devin Mui</a>
+<body id="page-top" class="index">
 
-				<ul class="pure-menu-list">
-					<li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
-					<li class="pure-menu-item"><a href="#skills" class="pure-menu-link">Skills</a></li>
-					<li class="pure-menu-item"><a href="#awards" class="pure-menu-link">Awards</a></li>
-					<li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Devin Mui</a>
+            </div>
 
-		<div id="main">
-			<div id="top" class="header">
-				<h1>Devin Mui</h1>
-				<h2>Full Stack Web Developer</h2>
-			</div>
-			<div class="content">
-				<div id="about">
-					<h2 class="content-subhead">Hey!</h2>
-					<p>
-						My name's Devin and I'm a full stack web developer attending Dublin High School. In fact, I created this website using Pure CSS, HTML, and Javascript. Writing code since I was 11 years old. I've won a few <a href="#awards">awards</a> from science fairs, hackathons, and school events. I've also got a bunch of <a href="#skills">other neat skills...</a>
-					</p>
-				</div>
-				<img src="./assets/images/stare.jpg" class="pure-img" />
-				<h2 id="skills" class="content-subhead">Skills</h2>
-				<div class="pure-g" data-sr>
-					<div class="pure-u-md-1-4 pure-u-1-2">
-						<div class="text-center">
-							<h3>HTML/CSS</h3>
-							<div id="html"></div>
-						</div>
-					</div>
-					<div class="pure-u-md-1-4 pure-u-1-2">
-						<div class="text-center">
-							<h3>Ruby on Rails</h3>
-							<div id="rails"></div>
-						</div>
-					</div>
-					<div class="pure-u-md-1-4 pure-u-1-2">
-						<div class="text-center">
-							<h3>Android</h3>
-							<div id="android"></div>
-						</div>
-					</div>
-					<div class="pure-u-md-1-4 pure-u-1-2">
-						<div class="text-center">
-							<h3>Javascript</h3>
-							<div id="js"></div>
-						</div>
-					</div>
-				</div>
-				<p>I also know how to use Autodesk Inventor, build circuits with Arduinos, and troubleshoot your standard everyday computer problems</p>
-				
-				<h2 id="awards" class="content-subhead">Awards</h2>
-				<div class="pure-g">
-					<div class="pure-u-md-1-4 pure-u-1-3 gutter">
-						<img src="./assets/images/lata.jpg" class="pure-img"/>
-						<p><a href="http://devpost.com/software/lata-wata-data?ref_content=feed-software-liked&ref_feature=feed&ref_medium=feed">Lata Wata Data</a></p>
-						<p>Simple, homemade, agricultural water moisture sensor connected through an API for automating farmland processes</p>
-						<p>Runner up at Water/Energy Nexus hackathon</p>
-					</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-					<div class="pure-u-md-1-4 pure-u-1-3 gutter">
-						<img src="./assets/images/safe_image.gif" class="pure-img"/>
-						<p><a href="https://www.youtube.com/watch?v=wyDwCKUbNmY">Stop Texting While Driving</a></p>
-						<p>An Android app that locks your phone when you're going down the highway. No picture so I included a gif.</p>
-						<p>4th place at Alameda County Science and Engineering Fair</p>
-					</div>
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Stuff I Made</h2>
+                    <h3 class="section-subheading text-muted">Mostly at hackathons</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/airtar.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Airtar</h4>
+                        <p class="text-muted">Hardware/Software</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/robotics.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Gael Force Robotics Club</h4>
+                        <p class="text-muted">Web Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Laser Harp</h4>
+                        <p class="text-muted">Hardware</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lata Wata Data</h4>
+                        <p class="text-muted">Hardware/Software/Web Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>BobaFetch</h4>
+                        <p class="text-muted">Software/App Devlopment</p>
+                    </div>
+                </div>
+            <!--<div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+    </section>
 
-					<div class="pure-u-md-1-4 pure-u-1-3 gutter">
-						<img src="./assets/images/rapiflash.jpg" class="pure-img"/>
-						<p><a href="http://devpost.com/software/lata-wata-data?ref_content=feed-software-liked&ref_feature=feed&ref_medium=feed">Rapiflash</a></p>
-						<p>Cheaper and more redundant flood detection/warning system</p>
-						<p>Best use of data at Dublin High School's Entrepreneurship project</p>
-					</div>
-			</div>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
 
-			<h2 id="contact" class="content-subheader">Contact</h2>
-			<div class="pure-g">
-				<div class="pure-u-1-2">
-					<div id="contacts" class="pure-g">
-						<div class="pure-u-1-3">
-							<h1><a href="mailto:devinmui@yahoo.com"><i class="fa fa-envelope-o"></i></a></h1>
-						</div>
-						<div class="pure-u-1-3">
-							<h1><a href="https://github.com/devinmui"><i class="fa fa-github"></i></a></h1>
-						</div>
-						<div class="pure-u-1-3">
-							<h1><i class="fa fa-twitter"></i></h1>
-						</div>
-					</div>
-				</div>
-				<div class="pure-u-1-2">
-					<img src="./assets/images/pikachu-light/pikachu.png" class="pure-img" style="width: 50%;" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/scrollReveal.min.js"></script>
-	<script src="./assets/js/smooth-scrolling.js"></script>
-	<script src="./assets/js/circle-progress.js"></script>
-	<script src="./assets/js/skills.js"></script>
-	<script>
-	      window.sr = new scrollReveal();
-(function (window, document) {
-		var layout   = document.getElementById('layout'),
-				menu     = document.getElementById('menu'),
-				menuLink = document.getElementById('menuLink');
-		function toggleClass(element, className) {
-				var classes = element.className.split(/\s+/),
-						length = classes.length,
-						i = 0;
-				for(; i < length; i++) {
-					if (classes[i] === className) {
-						classes.splice(i, 1);
-						break;
-					}
-				}
-				// The className is not found
-				if (length === classes.length) {
-						classes.push(className);
-				}
-				element.className = classes.join(' ');
-		}
-		menuLink.onclick = function (e) {
-				var active = 'active';
-				e.preventDefault();
-				toggleClass(layout, active);
-				toggleClass(menu, active);
-				toggleClass(menuLink, active);
-		};
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Airtar</h2>
+                            <p class="item-intro text-muted">Air guitar irl</p>
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/M0IZbODgNHo" frameborder="0" allowfullscreen></iframe>
+                            <p>At HackingEDU, we (<a href="http://jesseliang.club">Jesse Liang</a>, <a href="https://github.com/">Nathan Lo</a>, <a href="https://github.com/">Derrick Ng</a>, <a href="https://github.com/">Giang Duong</a>, and me) created Airtar in 36 hours. Using XCode7, C++, the Leapmotion, two Myos and the hardware's SDKs, we managed to develop a pretty accurate air guitar. The code is open sourced on <a href="https://github.com/devinmui/air_guitar">Github</a>.</p>
+                            <p>
+                                
+                            <ul class="list-inline">
+                                <li>Date: October 23 - 25, 2015</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-}(this, this.document));
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Dublin High School Gael Force Robotics Club</h2>
+                            <p class="item-intro text-muted">The website</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/robotics2.png" alt="">
+                            <p><a href="http://dhsrobotics.com">Gael Force Robotics</a> is our school's robotics club. I created their website and served as full stack web developer of the project as well as the project manager. I taught others how to code and create their own website and help develop this website.</p>
+                            <p>Visit our website <a href="http://dhsrobotics.com">here</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</script>
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Laser Harp</h2>
+                            <p class="item-intro text-muted">Arduinos, lasers, music</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>The Laser Harp is a simple Arduino based piece of hardware with the ability to shoot lasers and create music using the laser "strings". It was created using Arduino C, knowledge of circuits, and knowledge of microcontrollers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script>
-  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Lata Wata Data</h2>
+                            <p class="item-intro text-muted">Device for real time data for farmers</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                            <p></p>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  	ga('create', 'UA-66734336-1', 'auto');
-  	ga('send', 'pageview');
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>BobaFetch</h2>
+                            <p class="item-intro text-muted">Upcoming applications for Android and iOS</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                            <p>Apps that allow users to order boba tea from top boba vendors in the city. Upcoming for Lowell High School. Releasing mid November.</p>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</script>
+    <!-- Portfolio Modal 6 -->
+    <!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">    -->
+                            <!-- Project Details Go Here -->
+                        <!--<h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                            <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <!--script src="js/cbpAnimatedHeader.js"></script-->
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script>
+        $(document).keyup(function(e){
+            if(e.keyCode == 27) {
+                $('.modal').modal('hide');
+            }
+        });
+    </script>
+
 </body>
+
 </html>
