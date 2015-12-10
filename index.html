@@ -180,6 +180,12 @@
 			</div>
 		</div>-->
 	</section>
+	<section id="contact" class="module parallax parallax-3">
+		<div class="container">
+			<h1 class="section-heading">Contact</h1>
+			<p>I don't have a server so here's my email: <a href="mailto:devinmui@yahoo.com">devinmui@yahoo.com</a></p>
+		</div>
+	</section>
 
 	<!-- Portfolio Modals -->
 	<!-- Use the modals below to showcase details about your portfolio projects! -->
@@ -313,13 +319,33 @@
 			</div>
 		</div>
 	</div>
-
-	<section id="contact" class="module parallax parallax-3">
-		<div class="container">
-			<h1 class="section-heading">Contact</h1>
-			<p>I don't have a server so here's my email: <a href="mailto:devinmui@yahoo.com">devinmui@yahoo.com</a></p>
-		</div>
-	</section>
+	 <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 	<!-- Portfolio Modal 6 -->
 	<!--<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
@@ -349,7 +375,6 @@
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
-	<script src="js/smooth.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
@@ -365,7 +390,7 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="js/agency.js"></script>
-	<script src="js/pdf.js"></script>
+	<!--script src="js/smooth.js"></script-->
 	<script>
 		$(document).keyup(function(e){
 			if(e.keyCode == 27) {
@@ -374,7 +399,7 @@
 		});
 
 
-		PDFJS.getDocument('assets/misc/resume.pdf').then(function(pdf){
+		/*PDFJS.getDocument('assets/misc/resume.pdf').then(function(pdf){
 			pdf.getPage(1).then(function(page) {
 				var scale = 1.5;
 				var viewport = page.getViewport(scale);
@@ -390,7 +415,7 @@
 				};
 				page.render(renderContext);
 			});
-		});
+		});*/
 	</script>
 
 </body>
