@@ -1,0 +1,78 @@
+.back-to-top {
+  color: #26a69a !important;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+div#about {
+  height: 300px;
+}
+div#about h2 {
+  line-height: 150px;
+}
+div#resume h2 {
+  line-height: 150px;
+}
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 650px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  margin-top: 150px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax p {
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../img/explorer.gif");
+}
+section.module.parallax-2 {
+  background-image: url("../img/space3.jpg");
+}
+section.module.parallax-3 {
+  background-image: url("../img/ship.gif");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 48px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 48px;
+  }
+}
