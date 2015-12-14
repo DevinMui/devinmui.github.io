@@ -26,7 +26,7 @@
 </head>
 
 <body id="page-top" class="index">
-	<a href="#page-top" class="back-to-top"><i class="fa fa-stack"><i class="fa fa-arrow-up fa-stack-1x"></i><i class="fa fa-square-o fa-stack-2x"></i></i></a>
+	<a href="#page-top" class="back-to-top elevator-button"><i class="fa fa-stack"><i class="fa fa-arrow-up fa-stack-1x"></i><i class="fa fa-square-o fa-stack-2x"></i></i></a>
 	<!-- Navigation -->
 	<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
 		<div class="container">
@@ -432,6 +432,7 @@
 
 	<!-- Custom Theme JavaScript -->
 	<script src="js/agency.js"></script>
+	<script src="js/elevator.min.js"></script>
 	<!--script src="js/smooth.js"></script-->
 	<script>
 		$(document).keyup(function(e){
@@ -439,25 +440,14 @@
 				$('.modal').modal('hide');
 			}
 		});
-
-
-		/*PDFJS.getDocument('assets/misc/resume.pdf').then(function(pdf){
-			pdf.getPage(1).then(function(page) {
-				var scale = 1.5;
-				var viewport = page.getViewport(scale);
-
-				var canvas = document.getElementById('resume-pdf');
-				var context = canvas.getContext('2d');
-				canvas.height = viewport.height;
-				canvas.width = viewport.width;
-
-				var renderContext = {
-				  canvasContext: context,
-				  viewport: viewport
-				};
-				page.render(renderContext);
-			});
-		});*/
+		window.onload = function() {
+  	var elevator = new Elevator({
+    		element: document.querySelector('.elevator-button'),
+    		duration: 10000,
+    		mainAudio: 'assets/misc/cantina.mp3',
+    		endAudio: 'assets/misc/ding.mp3'
+  		});
+		}
 	</script>
 
 </body>
