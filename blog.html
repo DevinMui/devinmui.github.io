@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title>blog</title>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+	<style>
+		html, body {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+			font-family: Arial;
+			padding-left: 3%;
+			padding-right: 3%;
+		}
+		textarea {
+			margin-top: 30px;
+			height: 40%;
+			width: 85%;
+			border: none;
+			resize: none;
+		}
+		#prev {
+			width: 85%;
+		}
+		.clear
+    {
+      clear: both;
+    }
+    #titlePrev {
+    	text-transform: lowercase;
+    }
+	</style>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<input type="text" id="title" placeholder="title...">
+	<button id="format">Format</button>
+	<br>
+	<textarea id="body"></textarea>
+	<hr>
+	<h3 style="color: green" id="titlePrev"></h3>
+	<div id="prev"></div>
+	<pre id="pre"></pre>
+	<script>
+		var textareas = document.getElementsByTagName('textarea');
+		var count = textareas.length;
+		for(var i=0;i<count;i++){
+		    textareas[i].onkeydown = function(e){
+		        if(e.keyCode==9 || e.which==9){
+		            e.preventDefault();
+		            var s = this.selectionStart;
+		            this.value = this.value.substring(0,this.selectionStart) + " " + this.value.substring(this.selectionEnd);
+		            this.selectionEnd = s+1;
+		        }
+		    }
+		}
+		setInterval(function(){
+			$('#titlePrev').text($('#title').val())
+			$('#prev').html($('#body').val())
+			var title = $('#title').val();
+			var body = $('#body').val();
+			var json = '{ "title": ' + '"' +title + '"' + ', "body": ' + '"' + body + '"' + ' }'
+			$('#pre').text(json);
+			$('#prev pre code').each(function(){
+				hljs.highlightBlock(this)
+			})
+			//hljs.highlightBlock()
+		}, 50);
+
+	</script>
+</body>
+</html>

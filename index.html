@@ -1,100 +1,37 @@
 <!doctype html>
 <html>
-	<head>
-		<title>WELCOME TO MY HOMEPAGE</title>
-		<style>
-			body {
-				font-family: "Comic Sans MS";
-				text-align: center;
-				color: white;
-				background: url(background.jpg);
-				cursor: url(nyan.gif), pointer;
-			}
-			a {
-				color: white;
-			}
-			.rainbow {
-				-webkit-animation:rainbow 1s infinite;
-				-ms-animation:rainbow 1s infinite;
-				-o-animation:rainbow 1s infinite;
-				animation:rainbow 1s infinite;
-			}
-			@-webkit-keyframes rainbow {
-				0% {color: #ff0000;}
-				10% {color: #ff8000;}
-				20% {color: #ffff00;}
-				30% {color: #80ff00;}
-				40% {color: #00ff00;}
-				50% {color: #00ff80;}
-				60% {color: #00ffff;}
-				70% {color: #0080ff;}
-				80% {color: #0000ff;}
-				90% {color: #8000ff;}
-				100% {color: #ff0080;}
-			}
-			@-ms-keyframes rainbow {
-				0% {color: #ff0000;}
-				10% {color: #ff8000;}
-				20% {color: #ffff00;}
-				30% {color: #80ff00;}
-				40% {color: #00ff00;}
-				50% {color: #00ff80;}
-				60% {color: #00ffff;}
-				70% {color: #0080ff;}
-				80% {color: #0000ff;}
-				90% {color: #8000ff;}
-				100% {color: #ff0080;}
-			}
-			@-o-keyframes rainbow {
-				0% {color: #ff0000;}
-				10% {color: #ff8000;}
-				20% {color: #ffff00;}
-				30% {color: #80ff00;}
-				40% {color: #00ff00;}
-				50% {color: #00ff80;}
-				60% {color: #00ffff;}
-				70% {color: #0080ff;}
-				80% {color: #0000ff;}
-				90% {color: #8000ff;}
-				100% {color: #ff0080;}
-			}
-			@keyframes rainbow {
-				0% {color: #ff0000;}
-				10% {color: #ff8000;}
-				20% {color: #ffff00;}
-				30% {color: #80ff00;}
-				40% {color: #00ff00;}
-				50% {color: #00ff80;}
-				60% {color: #00ffff;}
-				70% {color: #0080ff;}
-				80% {color: #0000ff;}
-				90% {color: #8000ff;}
-				100% {color: #ff0080;}
-			}
-		</style>
-	</head>
-	<body>
-		<p>Not sponsored by:</p>
-		<img src="soylent.jpg" style="width: 5%;">
-		<h1>Welcome to my <span class="rainbow">home</span> page</h1>
-		<!--<img src="oculus.jpg" style="width: 25%">-->
-		<video autoplay loop>
-			<source src="video.mp4">
-		</video>
-		<p>I'm a nerd</p>
-		<p>You can follow me on:</p>
-		<ul>
-			<li><a href="http://github.com/devinmui">GitHub</a></li>
-			<li><a href="http://linkedin.com/in/devinmui">LinkedIn</a></li>
-			<li><a href="http://facebook.com/devin.mui">Facebook</a></li>
-		</ul>
-		<h3><marquee class="rainbow">THIS SITE IS UNDER CONSTRUCTION</marquee></h3>
-		<audio id="nyan" autoplay controls loop>
-			<source src="nyan.ogg">
-		</audio>
-		<script>
-			var audio = document.getElementById("nyan")
-			audio.volume = 0.1
-		</script>
-	</body>
+<head>
+	<title>Devin Mui | idk wtf i do</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+</head>
+<body>
+	<h1>def devin(): return "A collection of weird"</h1>
+	<p>just your friendly typical coder</p>
+	<h2>Posts (<span id="number_of_posts">0</span>)</h2>
+	<div id="posts">
+
+	</div>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+	<script type="text/javascript">
+
+		//var url = "https://api.myjson.com/bins/3i9r3"
+		var url = "blog.json"
+
+		var number_of_posts = 0
+		$.getJSON(url, function(data){
+			$.each(data.posts, function(i, post){
+				number_of_posts += 1
+				var complete_post = "<h3>" + post.title + "</h3>" +
+					post.body
+				$('#posts').append(complete_post)
+			})
+			hljs.initHighlighting()
+			$('#number_of_posts').text(number_of_posts)
+		});
+	</script>
+</body>
 </html>
