@@ -62,7 +62,12 @@
 			$('#prev').html($('#body').val())
 			var title = $('#title').val();
 			var body = $('#body').val();
+
+			title = title.replace(/(['"])/g, "\\$1");
+
+			body = body.replace(/(['"])/g, "\\$1");
 			var json = '{ "title": ' + '"' +title + '"' + ', "body": ' + '"' + body + '"' + ' }'
+
 			$('#pre').val(json);
 			$('#prev pre code').each(function(){
 				hljs.highlightBlock(this)
