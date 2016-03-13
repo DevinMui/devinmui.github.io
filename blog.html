@@ -38,13 +38,12 @@
 </head>
 <body>
 	<input type="text" id="title" placeholder="title...">
-	<button id="format">Format</button>
 	<br>
 	<textarea id="body"></textarea>
 	<hr>
 	<h3 style="color: green" id="titlePrev"></h3>
 	<div id="prev"></div>
-	<pre id="pre"></pre>
+	<input style="margin-top:20px;" type="text" id="pre" onclick="this.select()"></pre>
 	<script>
 		var textareas = document.getElementsByTagName('textarea');
 		var count = textareas.length;
@@ -64,7 +63,7 @@
 			var title = $('#title').val();
 			var body = $('#body').val();
 			var json = '{ "title": ' + '"' +title + '"' + ', "body": ' + '"' + body + '"' + ' }'
-			$('#pre').text(json);
+			$('#pre').val(json);
 			$('#prev pre code').each(function(){
 				hljs.highlightBlock(this)
 			})
