@@ -56,6 +56,7 @@ html {
 .nav > li > a {
 	padding: 20px !important;
 	margin: 0;
+	outline: 0;
 }
 .navbar-top {
 	background-color: transparent !important;
@@ -68,8 +69,7 @@ html {
   min-height: 60px;
   background-color: #191919;
 }
-
-.footer > .container > p {
+.footer > .container > * {
 	margin: 20px 0;
 }
 .logo {
@@ -79,6 +79,41 @@ html {
 .logo:hover {
   transform: rotateZ(360deg);
   transition: transform 1s;
+}
+.top-buffer {
+	margin-top: 25px;
+}
+.footer a {
+	color: inherit;
+}
+.footer a:hover {
+	color: #aaaaaa;
+}
+#projects > div > div > div {
+	min-height: 200px;
+	color: #E0E0E0;
+	background: #191919;
+	background-size: cover;
+	-webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#projects > div > div > div:hover {
+	transform: translate(5px, 5px);
+}
+#awards > div > div > div {
+	min-height: 200px;
+	color: #E0E0E0;
+	background: #191919;
+	background-size: cover;
+	-webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+#awards > div > div > div:hover {
+	transform: translate(5px, 5px);
 }
 @media (min-width: 1200px) {
 	.nav-collapse.collapse {
