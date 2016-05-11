@@ -1,37 +1,116 @@
 <!doctype html>
 <html>
 <head>
-	<title>Devin Mui | idk wtf i do</title>
-	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css"/>
+	<link rel="stylesheet" href="css/nav.css"/>
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" integrity="sha256-oTyWrNiP6Qftu4vs2g0RPCKr3g1a6QTlITNgoebxRc4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<title>Devin Mui</title>
 </head>
 <body>
-	<h1>def devin(): return "A collection of weird"</h1>
-	<p>just your friendly typical coder</p>
-	<h2>Posts (<span id="number_of_posts">0</span>)</h2>
-	<div id="posts">
+<nav id="navbar" class="navbar navbar-default navbar-top navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" style="height: 60px;"></a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="bg">
+	<div id="text">
+		<h1>Hello</h1>
+		<h1 id="devin">I'm Devin!</h1>
 	</div>
-	<!-- jquery -->
-	<script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc=" crossorigin="anonymous"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+</div>
+<div style="height: 100%"></div>
+<div class="container">
+	<div class="col-md-9">
+		<h1>Hello, there!</h1>
+		<p>
+			My name is Devin Mui. I'm a high school student who's enthusiastic about computer science and programming.
+		</p>
+		<p>
+			Currently, I reside in Dublin, California and attend Dublin High School going through the engineering classes available there. I have taken Intro to Engineering Design and I am almost finished with Principles of Engineering. In those classes, I learned about different types of engineering including electrical, mechanical, and chemical engineering as well as learning to write code.
+		</p>
+		<p>
+			For fun, I like to go to hackathons with my friends, <a href="https://dudeyoudontknow.github.io" target="_blank">Jesse Liang</a> and <a href="https://www.github.com/pepe-roni" target="_blank">Derrick Ng</a>, make cool things like <a href="https://github.com/DevinMui/weebly-api-calls" target="_blank">this</a>, <a href="https://github.com/DevinMui/codedaysfwinter2016" target="_blank">this</a>, and <a href="https://github.com/DevinMui/recognize" target="_blank">this</a>, win events like <a href="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/12936708_804560153011072_4440533977495899545_n.jpg?oh=2d0b55e131da06cc25c50c6eae848fa8&oe=57AB3BD3" target="_blank">this</a>, and drink stuff out of <a href="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/11705240_689393341194421_75031590539907482_n.jpg?oh=096b226a6ae5529f1295d58a68ca752b&oe=579D1D02" target="_blank">this</a>.
+		</p>
+	</div>
+	<div class="col-md-3">
+		<img src="images/me.jpg" class="img-responsive img-circle me center-block" alt="Devin Mui wearing the Oculus Rift DK2"/>
+	</div>
+</div>
 
-	<script type="text/javascript">
 
-		//var url = "https://api.myjson.com/bins/3i9r3"
-		var url = "blog.json"
 
-		var number_of_posts = 0
-		$.getJSON(url, function(data){
-			$.each(data.posts, function(i, post){
-				number_of_posts += 1
-				var complete_post = "<h3>" + post.title + "</h3>" +
-					post.body
-				$('#posts').append(complete_post)
-			})
-			hljs.initHighlighting()
-			$('#number_of_posts').text(number_of_posts)
-		});
-	</script>
+<div class="footer">
+  <div class="container">
+    <p class="text-muted">Made with HTML/CSS and Javascript</p>
+  </div>
+</div>
+
+<script>
+		// fade in .navbar
+		$(function () {
+			$(window).scroll(function () {
+				console.log($(this).scrollTop())
+	            // set distance user needs to scroll before we fadeIn navbar
+
+	      if($(this).scrollTop() > 50) {
+	      	$('#devin').addClass('devin')
+	      } else {
+	      	$('#devin').removeClass('devin')
+	      }
+
+				if ($(this).scrollTop() > 200) {
+					$('#navbar').removeClass('navbar-top')
+				} else {
+					$('#navbar').addClass('navbar-top')
+				}
+			});
+
+
+	});
+	$(function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+</script>
 </body>
 </html>
