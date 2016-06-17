@@ -1,7 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 html, body {
 	height: 100%;
 	width: 100%;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	font-family: Raleway,Futura,Trebuchet MS,Arial,sans-serif;
 }
 html {
   position: relative;
