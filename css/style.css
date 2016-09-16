@@ -1,0 +1,133 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+html, body {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: "PT Sans";
+}
+
+h4 {
+	line-height: 2;
+}
+
+/*.navbar-brand,*/
+.navbar-nav li a {
+  /*line-height: 65px;*/
+  height: 65px !important;
+  margin-top: 3px;
+  padding-top: 0;
+}
+.navbar-toggle {
+	padding: 20px !important;
+}
+.nav > li > a {
+	padding: 20px !important;
+	margin: 0;
+	outline: 0;
+}
+
+.btn-about > button {
+	transition: all 0.5s ease;
+	border-radius: 30px; 
+	background: transparent;
+	border: 1px solid #e0e0e0;
+	width: 150px; 
+	margin-top: 25px; 
+	height: 50px;
+	color: #e0e0e0;
+}
+
+.btn-about > button:hover {
+	background: #009688; 
+	border: 1px solid #009688;
+	color: #e0e0e0;
+}
+
+
+.fa-circ {
+	background: #009688;
+	border-radius: 50%;
+	padding-top: 35px;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.fa-circ > .fa {
+	color: white;
+}
+
+.fullscreen {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -1000;
+	position: absolute;
+	background-size: cover;
+}
+
+.fullscreen-text {
+	color: white;
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	left: 0;
+  	right: 0;
+}
+
+.break {
+	height: 100%;
+}
+
+#about {
+	color: #e0e0e0;
+	padding: 50px;
+	background: #009688;
+}
+
+#projects {
+	background: #009688;
+	padding: 50px;
+	color: #e0e0e0;
+}
+
+#contact {
+	background: #009688;
+	padding: 50px;
+	color: #e0e0e0;
+}
+
+.projects > .container > .row > .col-md-4 > .col-md-12 > img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.projects > .container > .row > .col-md-4 > .col-md-12 > h3 {
+	text-align: center;
+}
+
+.projects > .container > .row > .col-md-4 > .col-md-12 > p {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.footer {
+	/*margin-top: 60px;*/
+	width: 100%;
+	min-height: 60px;
+	background-color: #191919;
+}
+.footer > .container > * {
+	margin: 20px 0;
+}
+
+.fa-circle {
+	opacity: 1;
+	transition: all 0.5s ease;
+}

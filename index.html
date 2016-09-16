@@ -1,285 +1,242 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Devin Mui | Coder</title>
+
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>	
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/index.css"/>
-	<link rel="stylesheet" href="css/nav.css"/>
-	<!-- Optional theme -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js" integrity="sha256-oTyWrNiP6Qftu4vs2g0RPCKr3g1a6QTlITNgoebxRc4=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<title>dev(in) = mui</title>
+	<link href="vendor/fa/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="css/nav.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="home"></div>
-<nav id="navbar" class="navbar navbar-default navbar-top navbar-fixed-top">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#home" style="outline: 0;"><img class="logo" src="images/logo.png" style="height: 60px;"></a>
-		</div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#home" style="margin-top: 5px">Devin Mui</a>
+	    </div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="mailto:devinmui@yahoo.com">Contact</a></li>
-				<!-- <li><a href="#awards">Awards</a></li> -->
-				<!-- <li><a href="mailto:devinmui@yahoo.com"><i class="fa fa-envelope-o fa-lg"></i></a></li>
-				<li><a href="https://www.github.com/devinmui"><i class="fa fa-github fa-lg"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/devinmui"><i class="fa fa-linkedin fa-lg"></i></a></li>-->
-			</ul>
-		</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#home">Home</a></li>
+	        <li><a href="#about">About</a></li>
+	        <li><a href="#contact">Contact</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="fullscreen"></div>
+	
+	<div class="fullscreen-text">
+		<div class="container">
+ 			<h1>I'm Devin</h1>
+ 			<a href="#about" class="btn-about"><button class="btn">Who?</button></a>
+ 		</div>
 	</div>
-</nav>
-<div id="bg">
-	<div id="text">
-		<h1>Hello</h1>
-		<h1 id="devin">I'm Devin!</h1>
+	
+
+	<div class="break" id="home"></div>
+
+	<div class="main"> 
+		<section id="about">
+			<div class="container text-center">
+				<h2>Enthusiast. Coder. Student.</h2>
+			</div>
+		</section>
+
+		<section style="margin-top: 50px; margin-bottom: 50px;">
+			<div class="container">
+				<h2>About me</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<h4>I'm Devin Mui. I program for shits and giggles. I attend Dublin High School and am in Computer Science Applications and Digital Electronics at the moment. I have taken Intro to Engineering and Principles of Engineering in the past 2 years. I like to attend hackathons and do crazy shit every so often. What crazy stuff? Connect toasters to the internet, build sandwich bots, scrape all of StackOverflow for links, make rocket fuel, buy my friends' domain names, etc, etc</h4>
+					</div>
+					<div class="col-md-6">
+						<img src="img/devin.jpg" class="img-circle" style="display: block; margin: 0 auto; width: 300px;">
+					</div>
+				</div>
+
+				<h2 style="margin-bottom: 50px;">Stuff I Do</h2>				
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-12 col-xs-12">
+							<h1 class="fa-circ"><i class="fa fa-server"></i></h1>
+							<h3>Server Side</h3>
+							<p>Building bullshit node apps</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-12 col-xs-12">
+							<h1 class="fa-circ"><i class="fa fa-desktop"></i></h1>
+							<h3>Front End</h3>
+							<p>Making the web prettier</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-12 col-xs-12">
+							<h1 class="fa-circ"><i class="fa fa-warning"></i></h1>
+							<h3>AI</h3>
+							<p>Ending the world</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<div class="container">
+			 	<h2 class="text-center">For shits and giggles</h2>
+			</div>
+		</section>
+
+		<section style="margin-top: 50px; margin-bottom: 50px" class="projects">
+			<div class="container">
+				<h2>Projects</h2>
+
+				<div class="row">
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<!-- ive a gat in my rari -->
+
+				<div class="row">
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						
+						<div class="col-md-12 col-xs-12">
+							<h3>Blah</h3>
+							<img src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<div class="row sm text-center">
+					<h2>Contact me</h2>
+					<h4>When I'm burning in hell</h4>
+					<div class="col-md-6 col-md-offset-3">
+						<div class="col-md-4 col-xs-4">
+							<h1>
+								<a href="#">
+									<span class="fa-stack fa-lg">
+	  									<i class="fa fa-circle fa-stack-2x" style="color: #3B5998"></i>
+	  									<i class="fa fa-facebook fa-stack-1x" style="color: #e0e0e0"></i>
+									</span>
+								</a>
+							</h1>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<h1>
+								<a href="#">
+									<span class="fa-stack fa-lg">
+	  									<i class="fa fa-circle fa-stack-2x" style="color: #03a9f4"></i>
+	  									<i class="fa fa-envelope-o fa-stack-1x" style="color: #e0e0e0"></i>
+									</span>
+								</a>
+							</h1>
+						</div>
+						<div class="col-md-4 col-xs-4">
+							<h1>
+								<a href="#">
+									<span class="fa-stack fa-lg">
+		  								<i class="fa fa-circle fa-stack-2x" style="color: #191919"></i>
+		  								<i class="fa fa-github fa-stack-1x" style="color: #e0e0e0"></i>
+									</span>
+								</a>
+							</h1>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
 	</div>
-</div>
-<div style="height: 100%"></div>
-<div class="container" id="about">
-	<h1>Hello, there!</h1>
-	<div class="col-md-9">
-		<p>
-			I want to become a software engineer/computer scientist/electrical engineer. I plan to go to college and majoring in electrical engineering or computer science in order to achieve these goals. I want to work on building projects that people will use from around the world.
-		</p>
-		<p>
-			I have always wanted to help people and make their lives easier, whether it is from connecting masses of people from around the world together, building drones to help farmers, or by building a game that kids could play on their phones. I go to many hackathons where I make winning projects in 24 - 48 hours from nothing.
-		</p>
-		<p>
-			I am a leader. I have always led my team through every hackathon and won 7 awards at them. I take risks and move really fast. Everyone has described me as enthusiastic.
-		</p>
-		<p>
-			I have won many awards from hackathons, the Alameda County Science Fair, as well as local competitions such as the Entrepreneur Project Showcase. I am proficient in Ruby, Ruby on Rails, Javascript, HTML/CSS, as well as Python. I also know Java, C++, Node.js, and Swift.
-		</p>
-	</div>
-	<div class="col-md-3">
-		<img src="images/me.jpg" class="img-responsive img-circle me center-block" alt="Devin Mui wearing the Oculus Rift DK2"/>
-	</div>
+	<div class="footer">
+		<div class="container text-muted text-center">
 
-	<div id="projects">
-		<h1>Projects</h1>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="col-md-12" style="background: url(images/winch.jpg); background-size: cover;">
-					<h2>Mechanical Winch</h2>
-					<p>Built at Principles of Engineering November 2015</p>
-					<p>Our team tried to make the most efficient winch by using simple machines. I built the winch system and decided on what to use to build it. I had to exercise my electrical engineering and mechanical engineering skills to build this. I learned more about how to wire circuits and simple machines in this project.</p>
-					<a href="https://docs.google.com/document/d/1DBxuwze_2nStBIsJ5GS_fb8ePK9w27Euvu3qy6cUa-U/edit?usp=sharing">Documentation</a><br/>
-					<a href="https://docs.google.com/document/d/1B1RjoIvcomuA-HrK8IZ4UNmAa3DKyDRfNXYCHxIja-M/edit">Rubric</a>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Kinect Gun</h2>
-					<p>A quick hackathon project we made using computer vision</p>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>AirTar</h2>
-					<p>An awfully hacked together Myo/Leapmotion air guitar that plays MIDI notes</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="top-buffer"></div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<div class="col-md-12" style="background: url(images/drone.jpg); background-size: cover">
-					<h2>Entrepreneur Project</h2>
-					<p>Built at Principles of Engineering May 2016</p>
-					<p>We designed and built a solution to any problem in the world today. I wrote code and designed the physical model for a drone to collect data from a farm. I learned how to make a drone and build sensors. I had to use programming skills as well as some electrical engineering skills to build the project.</p>
-					<a href="https://docs.google.com/document/d/1bg3loKgpGBmYOf1g2DaenrpxStO7IU5KzY6Ol6JM-hM/edit?usp=sharing">Documentation</a><br/>
-					<a href="https://docs.google.com/document/d/1IxgPySNBAo-dbDwYgfFiczGwER1jTeigA-hY-23ka3s/edit">Rubric</a>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12" style="background: url(images/rough.jpg); background-size: cover">
-					<h2>Kinect Gun</h2>
-					<p>A quick hackathon project we made using computer vision</p>
-				</div>
-			</div>
-
-			<!-- <div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Mechanical Winch</h2>
-					<p>A Principles of Engineering project built with </p>
-				</div>
-			</div> -->
-		</div>
-
-	</div>
-
-	<!-- <div id="awards">
-		<h1>Awards</h1>
-
-		<div class="row">
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Best Use of Weebly</h2>
-					<p>Made Weebly-API-Requests</p>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Best Use of AWS</h2>
-					<p></p>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Best Use of AWS</h2>
-					<p></p>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="top-buffer"></div>
-
-		<div class="row">
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>1st Place at Ace Code Day</h2>
-					<p></p>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Cup 5t4Xx0r5</h2>
-					<p></p>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="col-md-12">
-					<h2>Best App/Tech Idea</h2>
-					<p></p>
-				</div>
-			</div>
-
-		</div>
-	</div> -->
-
-	<div id="#articles">
-		<h1>Articles/Media</h1>
-		<div class="row">
-			<div>
-				<div>
-					<h2>Lowell High School News</h2>
-					<p>Featured as a hackathon winner</p>
-					<a href="https://lhs-sfusd-ca.schoolloop.com/news/view?id=1456825469678&return_url=1461810283920">here</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div>
-				<div>
-					<h2>NASA SpaceApps Challenge SF 2016 YouTube Video</h2>
-					<p>Award presented at 1:38</p>
-					<a href="https://www.youtube.com/watch?v=amSe2ljWaQ8">this</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="footer">
-	<div class="container text-muted">
-		<div class="col-md-4">
 			<p>Copyright &copy; Devin Mui 2016</p>
-		</div>
-		<div class="col-md-4">
-			<p class="text-center"><a href="">resume</a></p>
-		</div>
-		<div class="col-md-4">
-			<div class="pull-right">
-				<div class="col-md-2">
-					<a href="mailto:devinmui@yahoo.com"><i class="fa fa-envelope-o fa-lg"></i></a>
-				</div>
-				<div class="col-md-2">
-					<a href="https://www.github.com/devinmui"><i class="fa fa-github fa-lg"></i></a>
-				</div>
-				<div class="col-md-2">
-					<a href="https://www.linkedin.com/in/devinmui"><i class="fa fa-linkedin fa-lg"></i></a>
-				</div>
-			</div>
+
+			
 		</div>
 	</div>
-</div>
 
-<script>
-		// fade in .navbar
-		$(function () {
-			$(window).scroll(function () {
-				console.log($(this).scrollTop())
-							// set distance user needs to scroll before we fadeIn navbar
-
-				if($(this).scrollTop() > 50) {
-					$('#devin').addClass('devin')
-				} else {
-					$('#devin').removeClass('devin')
-				}
-
-				if ($(this).scrollTop() > 200) {
-					$('#navbar').removeClass('navbar-top')
-				} else {
-					$('#navbar').addClass('navbar-top')
-				}
-			});
-
-
-	});
-
-	$('.logo').mouseenter(function(){
-		$('title').text('SPINNNING!!!')
-	})
-	$('.logo').mouseout(function(){
-		$('title').text('dev(in) = mui')
-	})
-
-	$(function() {
-		$('a[href*="#"]:not([href="#"])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html, body').animate({
-						scrollTop: target.offset().top
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	});
-</script>
+	<script type="text/javascript" src="js/smooth.js"></script>
 </body>
 </html>
