@@ -13,6 +13,57 @@ h4 {
 	line-height: 2;
 }
 
+.projects .col-md-4 {
+	transition: all 0.3s ease;
+}
+
+[id^=modal-] {
+	width: 100%;
+	height: 100%;
+	background: #009688;
+	position: fixed;
+	z-index: 10000000;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	color: #eee;
+	/*transition: all 1s ease;*/
+}
+
+.noscroll {
+	overflow-y: scroll;
+}
+
+[id^=btn-modal] {
+	position: absolute;
+	right: 5%;
+	top: 3%;
+	cursor: pointer;
+	z-index: 1000000000;
+}
+
+.modal-content {
+	padding: 1% 12%;
+	background: inherit;
+	box-shadow: none;
+	border: none;
+	overflow-y: scroll;
+}
+
+.modal-content a {
+	color: #eee;
+}
+
+.projects .col-md-4:hover {
+	background-color: #009688;
+	color: #eee;
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	/*border-radius: 10px;*/
+	/*transition: */
+}
+
 /*.navbar-brand,*/
 .navbar-nav li a {
   /*line-height: 65px;*/
@@ -62,6 +113,7 @@ h4 {
 
 .fullscreen {
 	background: url(../img/bg.jpg) no-repeat center center fixed;
+	/*background: url(../hipster.gif) no-repeat center center fixed;*/
 	height: 100%;
 	width: 100%;
 	z-index: -1000;
@@ -127,7 +179,12 @@ h4 {
 	margin: 20px 0;
 }
 
-.fa-circle {
+.fa-stack {
+	opacity: 0.75;
+	transition: all 0.4s ease;
+}
+
+.fa-stack:hover {
 	opacity: 1;
-	transition: all 0.5s ease;
+	box-shadow: rgba(0,0,0,.5);
 }
