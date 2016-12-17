@@ -323,7 +323,9 @@
 	<script type="text/javascript" src="js/modal.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('#load').fadeOut(500)
+			setTimeout(function(){
+				$('#load').fadeOut(500)
+			}, 3000)
 		})
 
 		var socket = io()
