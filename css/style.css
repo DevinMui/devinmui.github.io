@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 html, body {
 	height: 100%;
@@ -6,7 +6,7 @@ html, body {
 
 body {
 	height: 100%;
-	font-family: "PT Sans";
+	font-family: "Quicksand";
 }
 
 h4 {
