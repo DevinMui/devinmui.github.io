@@ -33,13 +33,14 @@ p {
 .card-content {
 	color: #fff;
 	padding: 15px;
+	padding-bottom: 50px;
 	background: #4488f4;
 }
 
 .card-fab {
 	position: absolute;
-	right: 30px;
-	bottom: 20px;
+	right: 25px;
+	bottom: 35px;
 	margin-bottom: 0;
 	border-radius: 50%;
 	width: 50px;
@@ -130,12 +131,6 @@ p {
 #skills span {
 	margin-left: 8px;
 	margin-right: 8px;
-}
-
-#media .col-md-3 {
-	height: 125px;
-	margin-top: -20px;
-	background: #4488f4;
 }
 
 .btn-blue {
