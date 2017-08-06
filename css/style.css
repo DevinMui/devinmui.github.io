@@ -37,6 +37,10 @@ p {
 	background: #4488f4;
 }
 
+.card-content > h2 {
+	margin-bottom: 10px !important;
+}
+
 .card-fab {
 	position: absolute;
 	right: 25px;

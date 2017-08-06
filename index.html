@@ -228,7 +228,6 @@ available for 2018 summer internships
 							<div class="card">
 								<img src="images/sf.jpg" class="img-responsive" style="width: 100%;">
 								<div class="card-content">
-									<!-- https://github.com/DevinMui/nga -->
 									<h2>Disease Predictor</h2>
 									<p><i>Uses ML to predict disease spread</i></p>
 									<a class="card-fab" href="#"><h2><i class="zmdi zmdi-plus"></i></h2></a>
@@ -239,8 +238,8 @@ available for 2018 summer internships
 							<div class="card">
 								<img src="images/sf.jpg" class="img-responsive" style="width: 100%;">
 								<div class="card-content">
-									<h2>Bot</h2>
-									<p><i>Business Venture</i></p>
+									<h2>Botstore</h2>
+									<p><i>Programmed a robot to fetch items for you</i></p>
 									<a class="card-fab" href="#"><h2><i class="zmdi zmdi-plus"></i></h2></a>
 								</div>
 							</div>
@@ -250,7 +249,7 @@ available for 2018 summer internships
 
 				</div>
 
-				<div class="text-center"><button class="btn btn-blue" id="load">Load More</button></div>
+				<div class="text-center" id="load"><button class="btn btn-blue">Load More</button></div>
 
 			</div>
 		</section>
@@ -323,7 +322,7 @@ available for 2018 summer internships
 
 	<div class="footer">
 		<div class="container" style="padding-bottom: 45px">
-			<a href="#" class="up text-center"><h2><i class="fa fa-chevron-up"></i></h2></a>
+			<a href="#" class="elevator-button text-center"><h2><i class="fa fa-chevron-up"></i></h2></a>
 			<div class="row">
 				<div class="col-md-3">
 					<h4>Devin Mui</h4>
@@ -345,6 +344,7 @@ available for 2018 summer internships
   crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/mustache.min.js"></script>
+	<script src="js/elevator.min.js"></script>
 	<script id="template" type="x-tmpl-mustache">
 		<div class="col-md-4">
 			<div class="card">
@@ -500,8 +500,18 @@ available for 2018 summer internships
 				var rendered = Mustache.render(template, projects[index]);
 				html.append(rendered);
 			}
+			if(index>=projects.length){
+				$('#load').html('<h3>"Wow, that\'s a lot of projects" - Krystal Chan</h3>')
+			}
 			$('#projects-container').append(html);
-		});	
+		});
+
+		var elevator = new Elevator({
+			element: document.querySelector('.elevator-button'),
+			mainAudio: 'mii.mp3',
+			endAudio: 'ding.mp3',
+			duration: 15000
+		});
 	</script>
 </body>
 </html>
