@@ -1,351 +1,191 @@
-<!--  
-
-/$$$$$$$  /$$       /$$$$$$$$  /$$$$$$   /$$$$$$  /$$$$$$$$       /$$   /$$ /$$$$$$ /$$$$$$$  /$$$$$$$$       /$$      /$$ /$$$$$$$$
-| $$__  $$| $$      | $$_____/ /$$__  $$ /$$__  $$| $$_____/      | $$  | $$|_  $$_/| $$__  $$| $$_____/      | $$$    /$$$| $$_____/
-| $$  \ $$| $$      | $$      | $$  \ $$| $$  \__/| $$            | $$  | $$  | $$  | $$  \ $$| $$            | $$$$  /$$$$| $$      
-| $$$$$$$/| $$      | $$$$$   | $$$$$$$$|  $$$$$$ | $$$$$         | $$$$$$$$  | $$  | $$$$$$$/| $$$$$         | $$ $$/$$ $$| $$$$$   
-| $$____/ | $$      | $$__/   | $$__  $$ \____  $$| $$__/         | $$__  $$  | $$  | $$__  $$| $$__/         | $$  $$$| $$| $$__/   
-| $$      | $$      | $$      | $$  | $$ /$$  \ $$| $$            | $$  | $$  | $$  | $$  \ $$| $$            | $$\  $ | $$| $$      
-| $$      | $$$$$$$$| $$$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$$      | $$  | $$ /$$$$$$| $$  | $$| $$$$$$$$      | $$ \/  | $$| $$$$$$$$
-|__/      |________/|________/|__/  |__/ \______/ |________/      |__/  |__/|______/|__/  |__/|________/      |__/     |__/|________/ 
-
-available for any internships
-
--->
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Devin Mui</title>
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Source+Sans+Pro:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/css/lightgallery.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Devin Mui | Graphic Design is My Passion</title>
 </head>
 <body>
-    <div class="hero">
-        <div class="pic"></div>
-        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="#" style="font-weight: 400">Devin Mui</a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-menubuilder">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#media">Media</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a target="_blank" href="./DevinMui_Resume.pdf">Resume</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Devin Mui</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="text">
-            <div class="container-fluid">
-                <h1>Hey, I'm Devin!</h1>
-                <h2><a href="./demo.html" style="color: white; text-decoration: none; cursor: default;">/demo.html</a></h2>
-            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./resume.pdf">Resume</a>
+                    </li>
+                </ul>
         </div>
-
-    </div>
+    </nav>
     
-    <div class="main">
-        <section id="about">
-            <div class="container">
-                <h1>About Me</h1>
-                <div class="row">
-                    <div class="col-md-3" style="margin-bottom: 25px">
-                        <img src="images/download.jpg" class="img-responsive" style="height: 300px; margin: 0 auto;">
-                    </div>
-                    <div class="col-md-9">
-                        <p>
-                            My name is <span>Devin Mui</span>. I graduated twice in two years: once from high school and the second from Las Positas College with an associates of arts in economics and an associates of science in mathematics. Now, I'm a sophomore at the University of Southern California pursuing a bachelors of science in computer science. 
-                        </p>
-                        <p>
-                            When I'm not at school, I like to spend my time programming with friends at hackathons, building businesses, or just playing video games. This year, I started freelancing on Upwork. One of my projects included producing an Instagram scraper script for data analysis. Currently, I'm working on a boba barista machine I like to call Boba Fetch.
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="embed-responsive embed-responsive-16by9 wow fadeInUp" data-wow-delay="0.6s" style="margin-top: 25px;">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vwItxpSZzF8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-                <p class="text-center" style="margin-top: 25px">I didn't get in but here's a video of some of my projects from high school</p>
+    <!-- Hero -->
+    <section class="hero">
+        <img src="./img/hero.svg" class="hero-img" />
+        <div class="hero-text">
+            <h1>Software Engineer</h1>
+            <p>Let's Build Cool Things Together</p>
+        </div>
+    </section>
 
+    <!-- About -->
+    <section id="about" class="container">
+        <h2 class="text-center">Bonjour!</h2>
+        <div class="col-md-5 mx-auto">
+            <p class="text-center">I’m an undergrad majoring in <span class="text-important">computer science</span> and minoring in <span class="text-important">mathematics</span> at the University of Southern California ✌️✌️✌️</p>
+        </div>
+    </section>
+    
+
+    <section id="what-i-do" class="container">
+        <h2 class="text-center">What do I do?</h2>
+        <div class="row">
+            <div class="col-md-3 offset-md-1">
+                <img src="./img/solder.svg" />
             </div>
-
-        </section>
-
-        <hr>
-
-        <section id="projects">
-
-            <div class="container">
-                <h1>Notable Projects</h1>
-                <p class="text-center">The Most Interesting Projects I Have Worked On</p>
-
-                <div id="projects-container" style="margin-top: 25px">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/legobobafetch.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>lego bobafetch</h2>
-                                    <p><i>LEGO Mindstorms Challenge</i></p>
-                                    <a class="card-fab" href="https://www.hackster.io/bobafetch/lego-boba-fetch-an-automated-boba-barista-powered-by-lego-4a886a" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/untitled.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>untitled princess carolyn project</h2>
-                                    <p><i>FB SF Hackathon</i></p>
-                                    <a class="card-fab" href="https://devpost.com/software/untitled-princess-carolyn-project"><h2><i class="zmdi zmdi-open-in-new" target="_blank"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/bobafetch.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>bobafetch</h2>
-                                    <p><i>Cal Hacks 6.0</i></p>
-                                    <a class="card-fab" href="https://devpost.com/software/bobafetch" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/blindsight.jpg" class="img-responsive">
-                                <div class="card-content">
-                                    <h2>Blindsight</h2>
-                                    <p><i>Software Developer</i></p>
-                                    <a class="card-fab" href="https://blindsight.app" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/loaf.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>projectloaf</h2>
-                                    <p><i>Lead developer</i></p>
-                                    <a class="card-fab" href="https://github.com/DevinMui/LoafTriangle" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/microwave.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>Muicrowave</h2>
-                                    <p><i>SLO Hacks</i></p>
-                                    <a class="card-fab" href="https://devpost.com/software/muicrowave" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- second row -->
-                    <div class="row">
-
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/cheater.jpg" class="img-responsive">
-                                <div class="card-content">
-                                    <h2>CheaterTI</h2>
-                                    <p><i>SF Hacks</i></p>
-                                    <a class="card-fab" href="https://devpost.com/software/cheaterti" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/saas.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>SaaS</h2>
-                                    <p><i>BASEHacks</i></p>
-                                    <a class="card-fab" href="https://devpost.com/software/robotic-arm-meal-maker-and-automated-drone-delivery"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="images/pictrnnary.jpg" class="img-responsive" style="width: 100%;">
-                                <div class="card-content">
-                                    <h2>PictRNNary</h2>
-                                    <p><i>Cal Hacks 5.0</i></p>
-                                    <a class="card-fab" href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/61b39b3/submission/" target="_blank"><h2><i class="zmdi zmdi-open-in-new"></i></h2></a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="col-md-5 offset-md-2">
+                <h3>Build Kickass Electronics Projects</h3>
+                <p>At hackathons, I’ve developed numerous award-winning Internet of Things appliances with scraps of garbage in under 24 hours.</p>
             </div>
-        </section>
-
-        <hr>
-        <!-- prob hide this section if mobile -->
-        <section id="media">
-            <div class="container">
-                <h1>Media</h1>
-                <p class="text-center">In the news</p>
-
-                <h3><a href="https://newsroom.ucla.edu/stories/uclas-virtual-hackathon-draws-more-than-1-000-students-to-develop-tech-for-l-a" target="_blank">UCLA Newsroom</a></h3>
-                <p>"The Musick Space: This app offers a virtual platform so that musicians can practice alone, rehearse together and perform online."</p>
-                <p>March 31, 2020</p>
-
-                <h3><a href="https://www.linkedin.com/feed/update/urn:li:activity:6477995026247925760/" target="_blank">Profisee Scholarship Winner</a></h3>
-                <p>"Devin was one of 365 applicants who submitted a short essay on why computer engineering or information systems powers innovation in today's businesses environment"</p>
-                <p>December 10, 2018</p>
-
-                <h3><a href="https://sanfrancisco.cbslocal.com/2018/09/07/local-teens-develop-high-tech-device-to-help-the-visually-impaired/" target="_blank">CBS</a></h3>
-                <p>"We wanted to make something a lot more cheap, a lot more accessible and empower visually impaired people," said young developer Devin Mui.</p>
-                <p>September 7, 2018</p>
-
-                <h3><a href="https://www.limitlessiq.com/news/post/view/id/6448/" target="_blank">LimitlessIQ</a></h3>
-                <p>影／高中生發明智慧臂套「Blindsight」　幫助視障人士解決生活上的難題</p>
-                <p>September 4, 2018</p>
-
-                <h3><a href="https://www.pymnts.com/innovation/2018/visa-blindsight-digital-payments-visually-impaired/" target="_blank">PYMNTS.com</a></h3>
-                <p>Unless you were a roadie for a major rock band — and you weren’t — you probably did nothing as cool as some recently graduated high schoolers in California did... they invented an assistive armband device that is designed to make payments and commerce easier — and safer — for visually impaired consumers.</p>
-                <p>August 31, 2018</p>
-
-                <h3><a href="https://community.developer.visa.com/t5/Blogs/High-School-Grads-Build-Seamless-Payment-Experience-for-the/ba-p/9211" target="_blank">TechCrunch Disrupt SF Hackathon</a></h3>
-                <p>Since June, more than 1,000 developers, programmers, hackers and tech makers all over the world have been hard at work on their most creative hacks, and we recruited an impressive panel of judges — check out their bona fides below — to help us narrow the field.</p>
-                <p>August 2018</p>
-
-                <h3><a href="https://community.developer.visa.com/t5/Blogs/High-School-Grads-Build-Seamless-Payment-Experience-for-the/ba-p/9211" target="_blank">Visa Blog</a></h3>
-                <p>Senioritis. Commonly known as the affliction of students in their final year of high school characterized by a decline in motivation or performance. Did you experience this? Well, team Blindsight did not.</p>
-                <p>August 22, 2018</p>
-
-                <h3><a href="https://makezine.com/2018/08/07/using-ubiquitous-tech-to-assist-the-visually-impaired/" target="_blank">Makezine</a></h3>
-                <p>In today’s world, designers often create environments that rely on their users being able to see. Accessibility for the visually impaired is either an afterthought or not considered at all. For the 285 million visually impaired people around the world, tasks like finding one’s keys or walking along busy sidewalks become arduous or even impossible. Blindsight, however, seeks to change this reality. A new assistive technology designed by high school students and invited to showcase at the China-US Young Makers Competition in Beijing, Blindsight promises to dramatically improve the quality of life for the blind.</p>
-                <p>August 22, 2018</p>
-
-                <h3><a href="https://bulletin.google.com/share/kTDrItcz/dBe_8T" target="_blank">Dublin High School Entrepreneurship Project Presentation</a></h3>
-                <p>Our 6th annual Entrepreneur Competition and Showcase has started! Students have worked for 2 weeks developing solutions to problems of their choice. Tonight top teams from each engineering class present our panel of industry judges.</p>
-                <p>May 25, 2018</p>
-
-                <h3><a href="http://www.justjared.com/2017/03/12/gina-rodriguez-hosts-seed-premiere-at-sxsw/" target="_blank">Just Jared</a></h3>
-                <p>The 32-year-old Jane The Virgin actress hosted the premiere and was joined by the film’s stars Pulkit Mahajan, Devon Mui, and Ethan Reid, as well as the director, Andrew Wonder.</p>
-                <p>May 23, 2017</p>
-
-                <h3><a href="https://fundingsage.com/business-startup-spotlight-nomad/" target="_blank">FundingSage</a></h3>
-                <p>Nomad solves the problem of shoppers abandoning their search efforts by enabling users to find products simply by taking a picture or image of what they want. Ultimately this reduces processing time and cost while improving accuracy.</p>
-                <p>May 23, 2017</p>
-
-                <h3><a href="http://blog.angelhack.com/2016/10/25/14-new-global-startups-taking-the-stage-at-angelhacks-global-demo-day" target="_blank">AngelHack</a></h3>
-                <p>Nomad -- A product recognition solution to simplify the shopping experience.How do they do this? Users simply find an item they like, like a pair of shoes their friend is wearing, snap a picture, then find out where on the internet they can buy those shoes. By integrating into current retailer’s existing app’s, the team is creating a new way to shop!</p>
-                <p>Oct 25, 2016</p>
-
-                <h3><a href="https://lhs-sfusd-ca.schoolloop.com/news/view?id=1456825469678&return_url=1461810283920" target="_blank">Lowell High School</a></h3>
-                <p>Congratulations to Lowell 10th graders Derrick Ng and Jesse Liang for winning the AngelHack 2016 Weebly API Prize along with their friend Devin Mui from Dublin High. They competed in the hackathon at AngelHack San Francisco, April 9th 2016. They won a $1000 amazon gift card for their efforts. Way to go hackers!</p>
-                <p>April 27, 2016</p>
-
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Design Maintainable Software</h3>
+                <p>I’ve written software for multiple clients since high school. Currently, I write and fix remote learning programs for the USC Marshall School of Business.</p>
             </div>
-        </section>
-        
-        <section id="contact" style="margin-bottom: 75px;">
-            <div class="container">
-                <h1 class="text-center">Contact</h1>
-                <p class="text-center" style="margin-bottom: 25px">Let's get boba and talk</p>
-                <div class="col-md-6">
-                    <form action="http://formspree.io/dmui@usc.edu" method="post" id="contact_form">
-                        <div class="row">
-                            <div class="form-group floating-label-form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="_replyto" class="form-control" placeholder="Email"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group floating-label-form-group">
-                                <label for="body">Body</label>
-                                <textarea name="body" style="resize:both; height: 25px" type="text" id="body" class="form-control" placeholder="Body"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn-blue" type="submit" style="border: none; margin-left: -15px; margin-top: 15px; margin-bottom: 25px">Send</button>
-                    </form>
-                </div>
-                <div class="col-md-4 col-md-offset-1" class="contact">
-                    <h5>Email</h5>
-                    <p><a href="mailto:dmui@usc.edu" style="color: #333">dmui@usc.edu</a></p>
-                    <hr class="hr_contact">
-                    <h5>Social Media</h5>
+            <div class="col-md-3 offset-md-2">
+                <img src="./img/code.svg" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 offset-md-1">
+                <img src="./img/sax.svg" />
+            </div>
+            <div class="col-md-5 offset-md-2">
+                <h3>Relax as a Creative</h3>
+                <p>I run a small YouTube channel where I post video demos of my past work. I also play violin, alto saxophone, and bass guitar, and I am currently learning trumpet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="text-center">What have I built?</h2>
+
+        <div class="captions" style="display:none">
+            <div class="caption1">
+                <h4><a href="https://devpost.com/software/blindsight-virtual-eyes-through-haptic-feedback">Blindsight</a></h4>
+                <p>Blindsight simulates a novel sense of sight with haptic feedback vibration motors and ML.</p>
+            </div>
+            <div class="caption2">
+                <h4><a href="https://devpost.com/software/bobafetch">BobaFetch</a></h4>
+                <p>BobaFetch is an automated boba tea barista system. Leveraging the most advanced tools known to mankind (cardboard, tape, free cups) and some other stuff that's also kinda cool (Azure, CockroachDB, Domain.com), our team has successfully produced BobaFetch v0.1. This earliest version is a Minimum Viable Product that is capable of dispensing a customer-ready cup of boba tea within 90 seconds.</p>
+            </div>
+            <div class="caption3">
+                <h4><a href="https://devpost.com/software/cheaterti">CheaterTI</a></h4>
+                <p>There is a major problem plaguing academic institutions nationwide: poor grades. This is especially the case for students in STEM. This will be a problem no more. Introducing: CheaterTI; the solution to all things regarding academic dishonesty.</p>
+            </div>
+            <div class="caption4">
+                <h4><a href="https://github.com/DevinMui/LoafTriangle">Loaf</a></h4>
+                <p>
+                In almost every household in the United States, WiFi signals are present. In this experiment/project, we will develop software to sniff for active probes emitted by connection attempts from WiFi-enabled devices such as smartphones. In every WiFi request, there is a present Received Signal Strength Indicator (RSSI) which shows a -dBm value. As the RSSI value is the strength of the WiFi signal between the wireless access point (WiFi AP), we can correlate this value with distance as well as obstructions. However, WiFi signals fluctuate because of WiFi signal reflections. In this experiment, we will attempt to trilaterate the internal position of a WiFi-enabled device.
+                </p>
+            </div>
+            <div class="caption5">
+                <h4><a href="https://devpost.com/software/muicrowave">Muicrowave</a></h4>
+                <p>After jokingly talking about creating a smart microwave at a previous competition, we decided to make this joke a reality. Our team came prepared with the plan of making the muicrowave. Some features directly inspired by Brian Anderson. Our microwave is unlike any other. Using the Google Cloud Vision API, users no longer have to deal with the guesswork involved in normal microwaves. Simply scan your food item, pop it in the oven, and ask Alexa to turn the microwave on. It's that easy.</p>
+                <div class="caption6">
+                    <h4><a href="https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/61b39b3/submission/">PictRNNary</a></h4>
                     <p>
-                        <a href="https://www.facebook.com/devinmui" style="color: #333"><i class="fa fa-facebook" style="margin-right: 15px"></i></a>
-                        <a href="https://www.twitter.com/devinwmui" style="color: #333"><i class="fa fa-twitter" style="margin-right: 15px"></i></a>
-                        <a href="https://www.linkedin.com/in/devinmui" style="color: #333"><i class="fa fa-linkedin"></i></a>
+                    In an increasingly digitized world, nobody wants to play pen-and-paper games anymore. Yet this screen revolution means that the analog beauty of pencil drawings and the camaraderie shared by friends are all lost.
+
+                    How can we take a classic drawing game and make it appealing to users of the digital age? Answer: PictRNNary!
                     </p>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <div class="footer">
-        <div class="container" style="padding-bottom: 45px">
-            <a href="#" class="elevator-button text-center"><h2><i class="fa fa-chevron-up"></i></h2></a>
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>Devin Mui</h4>
-                    <p>Undergraduate CS @ USC</p>
-                    <p>&copy; <span id="year">this site was actually made in 2019 for all you people looking at the source or on internet explorer or something</span> Devin Mui</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>Contact</h4>
-                    <p><a href="mailto:dmui@usc.edu">dmui@usc.edu</a></p>
-                </div>
+            <div class="caption7">
+                <h4><a href="https://devpost.com/software/robotic-arm-meal-maker-and-automated-drone-delivery">SaaS (Sandwich as a Service)</a></h4>
+                <p>We were inspired by robotic arms, that are used in factories to make the vehicles. They were able to work with such efficiency, we knew we wanted to build something similar. With this in mind, we knew that building a robotic arm to make a car was illogical. So, we set our sights on a robotic arm to make sandwiches.</p>
+            </div>
+
+            <div class="caption8">
+                <h4><a href="https://devpost.com/software/untitled-princess-carolyn-project">Untitled Princess Carolyn Project</a></h4>
+                <p>Everyone has a daily routine. For me, that would be waking up, drinking tea, skipping class, and coding until I pass out from exhaustion. However, I find one part of this process to be excruciatingly mundane. That would, of course, be the drinking tea part. In fact, there are over 10 steps to drinking tea. This is a daunting number of tasks and no one should have to go through this ordeal.</p>
             </div>
         </div>
-    </div>
+
+        <div id="project-thumbnails">
+            <a href="./img/projects/blindsight.jpg" data-sub-html=".caption1">
+                <img src="./img/projects/blindsight.jpg"/>
+            </a>
+            <a href="./img/projects/bobafetch.jpg" data-sub-html=".caption2">
+                <img src="./img/projects/bobafetch.jpg"/>
+            </a>
+            <a href="./img/projects/cheater.jpg" data-sub-html=".caption3">
+                <img src="./img/projects/cheater.jpg"/>
+            </a>
+            <a href="./img/projects/loaf.jpg" data-sub-html=".caption4">
+                <img src="./img/projects/loaf.jpg"/>
+            </a>
+            <a href="./img/projects/microwave.jpg" data-sub-html=".caption5">
+                <img src="./img/projects/microwave.jpg"/>
+            </a>
+            <a href="./img/projects/pictrnnary.jpg" data-sub-html=".caption6">
+                <img src="./img/projects/pictrnnary.jpg"/>
+            </a>
+            <a href="./img/projects/saas.jpg" data-sub-html=".caption7">
+                <img src="./img/projects/saas.jpg"/>
+            </a>
+            <a href="./img/projects/untitled.jpg" data-sub-html=".caption8">
+                <img src="./img/projects/untitled.jpg"/>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="text-center">What can I do for you?</h2>
+        <div class="col-md-5 mx-auto">
+            <p class="text-center text-important text-bold">I’m available for SWE internships, full time offers, and of course, freelance work</p>
+
+            <form action="https://formspree.io/xqkydpdz" method="POST">
+                <input type="text" name="name" placeholder="Your name" class="form-control"/>
+                <input type="text" name="_replyto" placeholder="your@email.com" class="form-control"/>
+                <textarea type="text" name="body" placeholder="Your message" class="form-control"></textarea>
+                <input type="submit" name="submit" value="Send" class="form-control btn-primary"/>
+            </form>
+            <p class="text-center">or email <a href="mailto:dmui@usc.edu">dmui@usc.edu</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed and Coded with ❤️💛❤️ by Devin Mui &copy; 2020</p>
+    </footer>
 
     <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/elevator.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            var date = new Date();
-            $("#year").text(
-                date.getFullYear()
-            );
-
-            $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-                $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-            }).on("focus", ".floating-label-form-group", function() {
-                $(this).addClass("floating-label-form-group-with-focus");
-            }).on("blur", ".floating-label-form-group", function() {
-                $(this).removeClass("floating-label-form-group-with-focus");
-            });
-        });
-        $('textarea').each(function () {
-            this.setAttribute('style', 'height:' + (this.scrollHeight) + 'px;overflow-y:hidden;');
-        }).on('input', function () {
-            this.style.height = 'auto';
-            this.style.height = (this.scrollHeight) + 'px';
-        });
-
-        var elevator = new Elevator({
-            element: document.querySelector('.elevator-button'),
-            mainAudio: 'mii.mp3',
-            endAudio: 'ding.mp3',
-            duration: 15000
-        });
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery-all.min.js"></script>
+    <script>
+        $('#project-thumbnails').lightGallery({ thumbnail: true,animateThumb: true,
+            showThumbByDefault: true })
     </script>
 </body>
 </html>
