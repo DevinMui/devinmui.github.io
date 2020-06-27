@@ -63,8 +63,8 @@
     <section id="what-i-do" class="container">
         <h2 class="text-center">What do I do?</h2>
         <div class="row">
-            <div class="col-md-3 offset-md-1 col-6 mx-auto">
-                <img src="./img/solder.svg" />
+            <div class="col-md-3 offset-md-1 col-6 mx-auto" id="solder">
+                <!-- <img src="./img/solder.svg" /> -->
             </div>
             <div class="col-md-5 offset-md-2 mt-md-0 mt-5">
                 <h3>Build Kickass Electronics Projects</h3>
@@ -76,13 +76,13 @@
                 <h3>Design Maintainable Software</h3>
                 <p>I’ve written software for multiple clients since high school. Currently, I write and fix remote learning programs for the USC Marshall School of Business.</p>
             </div>
-            <div class="col-md-3 offset-md-2 col-6 mx-auto order-md-last order-first">
-                <img src="./img/code.svg" />
+            <div class="col-md-3 offset-md-2 col-6 mx-auto order-md-last order-first" id="code">
+                <!-- <img src="./img/code.svg" /> -->
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 offset-md-1 col-6 mx-auto">
-                <img src="./img/sax.svg" />
+            <div class="col-md-3 offset-md-1 col-6 mx-auto" id="sax">
+                <!-- <img src="./img/sax.svg" /> -->
             </div>
             <div class="col-md-5 offset-md-2 mt-md-0 mt-5">
                 <h3>Relax as a Creative</h3>
@@ -191,6 +191,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery-all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
     <script>
         $(document).ready(()=>{
             let inputStr = ""
@@ -223,7 +224,7 @@
                             root.style.setProperty(style, darkStyles[style])
                         }
                     } else {
-                        for(style in lightStyles) {
+                        for(const style in lightStyles) {
                             let root = document.documentElement
                             root.style.setProperty(style, lightStyles[style])
                         }
@@ -234,6 +235,20 @@
             $('#project-thumbnails').lightGallery({ 
                 thumbnail: true,
             })
+
+            const lottieFiles = [ 'solder', 'code', 'sax' ]
+
+            let i = 0
+            for(const file of lottieFiles) {
+                bodymovin.loadAnimation({
+                    container: document.getElementById(file),
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: `./img/${file}.json`
+                }).goToAndPlay(30*i, true)
+                ++i;
+            }
         })
     </script>
 </body>
