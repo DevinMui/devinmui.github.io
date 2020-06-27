@@ -53,6 +53,7 @@ a {
     font-size: 36px;
     font-weight: 700;
 }
+
 .nav-link {
     color: #000 !important;
     margin-right: 30px;
@@ -93,9 +94,14 @@ a {
     margin-bottom: 75px;
 }
 
-#projects img {
-    height: 200px;
-    width: 200px;
+#project-thumbnails img {
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#project-thumbnails img:hover #project-thumbnails img:before {
+    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 #contact {
@@ -128,4 +134,19 @@ footer {
 footer p {
     color: #fff;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    h1,
+    h2 {
+        font-size: 28px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .hero .hero-text {
+        width: 100%;
+    }
 }

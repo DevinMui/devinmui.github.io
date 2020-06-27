@@ -63,28 +63,28 @@
     <section id="what-i-do" class="container">
         <h2 class="text-center">What do I do?</h2>
         <div class="row">
-            <div class="col-md-3 offset-md-1">
+            <div class="col-md-3 offset-md-1 col-6 mx-auto">
                 <img src="./img/solder.svg" />
             </div>
-            <div class="col-md-5 offset-md-2">
+            <div class="col-md-5 offset-md-2 mt-md-0 mt-5">
                 <h3>Build Kickass Electronics Projects</h3>
                 <p>At hackathons, I’ve developed numerous award-winning Internet of Things appliances with scraps of garbage in under 24 hours.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 mt-md-0 mt-5 order-md-first order-last">
                 <h3>Design Maintainable Software</h3>
                 <p>I’ve written software for multiple clients since high school. Currently, I write and fix remote learning programs for the USC Marshall School of Business.</p>
             </div>
-            <div class="col-md-3 offset-md-2">
+            <div class="col-md-3 offset-md-2 col-6 mx-auto order-md-last order-first">
                 <img src="./img/code.svg" />
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3 offset-md-1">
+            <div class="col-md-3 offset-md-1 col-6 mx-auto">
                 <img src="./img/sax.svg" />
             </div>
-            <div class="col-md-5 offset-md-2">
+            <div class="col-md-5 offset-md-2 mt-md-0 mt-5">
                 <h3>Relax as a Creative</h3>
                 <p>I run a small YouTube channel where I post video demos of my past work. I also play violin, alto saxophone, and bass guitar, and I am currently learning trumpet.</p>
             </div>
@@ -135,32 +135,33 @@
            </div>
         </div>
 
-        <div id="project-thumbnails">
-            <a href="./img/projects/blindsight.jpg" data-sub-html=".caption1">
-                <img src="./img/projects/blindsight.jpg"/>
-            </a>
-            <a href="./img/projects/bobafetch.jpg" data-sub-html=".caption2">
-                <img src="./img/projects/bobafetch.jpg"/>
-            </a>
-            <a href="./img/projects/cheater.jpg" data-sub-html=".caption3">
-                <img src="./img/projects/cheater.jpg"/>
-            </a>
-            <a href="./img/projects/loaf.jpg" data-sub-html=".caption4">
-                <img src="./img/projects/loaf.jpg"/>
-            </a>
-            <a href="./img/projects/microwave.jpg" data-sub-html=".caption5">
-                <img src="./img/projects/microwave.jpg"/>
-            </a>
-            <a href="./img/projects/pictrnnary.jpg" data-sub-html=".caption6">
-                <img src="./img/projects/pictrnnary.jpg"/>
-            </a>
-            <a href="./img/projects/saas.jpg" data-sub-html=".caption7">
-                <img src="./img/projects/saas.jpg"/>
-            </a>
-            <a href="./img/projects/untitled.jpg" data-sub-html=".caption8">
-                <img src="./img/projects/untitled.jpg"/>
-            </a>
+        <div id="project-thumbnails" class="row row-cols-2">
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/blindsight.jpg" data-sub-html=".caption1">
+                <img class="img-fluid" src="./img/projects/blindsight.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/bobafetch.jpg" data-sub-html=".caption2">
+                <img class="img-fluid" src="./img/projects/bobafetch.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/cheater.jpg" data-sub-html=".caption3">
+                <img class="img-fluid" src="./img/projects/cheater.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/loaf.jpg" data-sub-html=".caption4">
+                <img class="img-fluid" src="./img/projects/loaf.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/microwave.jpg" data-sub-html=".caption5">
+                <img class="img-fluid" src="./img/projects/microwave.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/pictrnnary.jpg" data-sub-html=".caption6">
+                <img class="img-fluid" src="./img/projects/pictrnnary.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/saas.jpg" data-sub-html=".caption7">
+                <img class="img-fluid" src="./img/projects/saas.jpg"/>
+            </div>
+            <div class="col-md-3 col-6 mx-auto" data-src="./img/projects/untitled.jpg" data-sub-html=".caption8">
+                <img class="img-fluid" src="./img/projects/untitled.jpg"/>
+            </div>
         </div>
+
     </section>
 
     <section id="contact" class="container">
@@ -189,11 +190,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.2/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
     <script>
-        $('#project-thumbnails').lightGallery({ 
-            thumbnail: true,
-            animateThumb: true,
-            showThumbByDefault: true 
+        $(document).ready(()=>{
+            $('#project-thumbnails').lightGallery({ 
+                thumbnail: true,
+            })
         })
     </script>
 </body>
