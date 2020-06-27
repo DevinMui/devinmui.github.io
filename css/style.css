@@ -62,6 +62,7 @@ a {
 
 .hero {
     position: relative;
+    width: 100%;
 }
 
 .hero .hero-text {
@@ -70,6 +71,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.hero .hero-text h1 {
+    background-color: rgba(53, 255, 240, 0.45);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #about {
@@ -144,9 +151,40 @@ footer p {
 
     .navbar-brand {
         margin: 0;
+        font-size: 28px;
     }
 
     .hero .hero-text {
-        width: 100%;
+        width: 63%;
+    }
+
+    #what-i-do {
+        margin-top: 75px;
+    }
+
+    #projects {
+        margin-top: 50px;
+    }
+
+    #projects h2 {
+        margin-bottom: 25px;
+    }
+
+    #contact {
+        margin-top: 75px;
+    }
+
+    #contact h2 {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        margin-top: 75px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .hero .hero-text {
+        width: 83%;
     }
 }
