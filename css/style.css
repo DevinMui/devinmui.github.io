@@ -1,5 +1,10 @@
 :root {
+    --background-color: #fff;
+    --text-color: #000;
     --main-color: #0063f9;
+    --nav-link-color: #000;
+    --highlight-color: rgba(53, 255, 240, 0.45);
+    --footer-color: #fff;
 }
 
 html {
@@ -13,6 +18,8 @@ body {
     font-family: 'Source Sans Pro';
     height: 100%;
     width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 body {
@@ -47,17 +54,23 @@ a {
     font-weight: 700;
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
     margin-left: 60px;
     margin-right: 80px;
     font-size: 36px;
     font-weight: 700;
+    color: var(--nav-link-color);
 }
 
-.nav-link {
-    color: #000 !important;
+.navbar .navbar-nav .nav-link {
+    color: var(--nav-link-color);
     margin-right: 30px;
     font-size: 18px;
+    transition: 0.25s all;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    transition: 0.25s all;
 }
 
 .hero {
@@ -74,7 +87,7 @@ a {
 }
 
 .hero .hero-text h1 {
-    background-color: rgba(53, 255, 240, 0.45);
+    background-color: var(--highlight-color);
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -102,11 +115,12 @@ a {
 }
 
 #project-thumbnails img {
-    margin-top: 25px;
+    margin-top: 30px;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
-#project-thumbnails img:hover #project-thumbnails img:before {
+#project-thumbnails img:hover {
     transition: all 0.5s;
     transform: scale(1.2);
 }
@@ -139,7 +153,7 @@ footer {
 }
 
 footer p {
-    color: #fff;
+    color: var(--footer-color);
     text-align: center;
 }
 

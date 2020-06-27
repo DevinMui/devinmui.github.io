@@ -193,6 +193,44 @@
     <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
     <script>
         $(document).ready(()=>{
+            let inputStr = ""
+            let isDark = false
+            const correctStr = "fuckjavascript"
+            const darkStyles = {
+                "--background-color": "#000",
+                "--text-color": "#fff",
+                "--main-color": "#1175d9",
+                "--nav-link-color": "#fff",
+                "--highlight-color": "rgba(53, 255, 240, 0.45)",
+                "--footer-color": "#fff"
+            }
+            const lightStyles = {
+                "--background-color": "#fff",
+                "--text-color": "#000",
+                "--main-color": "#0063f9",
+                "--nav-link-color": "#000",
+                "--highlight-color": "rgba(53, 255, 240, 0.45)",
+                "--footer-color": "#fff"
+            }
+
+            document.addEventListener('keydown', (e) => {
+                inputStr += String.fromCharCode(e.keyCode).toLowerCase()
+                if(inputStr === correctStr) {
+                    isDark = !isDark
+                    if(isDark) {
+                        for(style in darkStyles) {
+                            let root = document.documentElement
+                            root.style.setProperty(style, darkStyles[style])
+                        }
+                    } else {
+                        for(style in lightStyles) {
+                            let root = document.documentElement
+                            root.style.setProperty(style, lightStyles[style])
+                        }
+                    }
+                    inputStr = ""
+                } else if(!correctStr.startsWith(inputStr)) inputStr = ""
+            })
             $('#project-thumbnails').lightGallery({ 
                 thumbnail: true,
             })
