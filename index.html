@@ -18,27 +18,31 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Devin Mui</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./resume.pdf">Resume</a>
-                    </li>
-                </ul>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Devin Mui</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./resume.pdf">Resume</a>
+                </li>
+                <li class="nav-item d-md-none d-block">
+                    <a class="nav-link" href="#" onclick="toggleDarkMode()">Save Eyes</a>
+                </li>
+            </ul>
         </div>
     </nav>
     
@@ -193,42 +197,52 @@
     <script src="https://cdn.jsdelivr.net/npm/lg-thumbnail@1.2.1/dist/lg-thumbnail.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.10/lottie.min.js"></script>
     <script>
+        let isDark = false
+        const darkStyles = {
+            "--background-color": "#000",
+            "--text-color": "#fff",
+            "--main-color": "#1175d9",
+            "--nav-link-color": "#fff",
+            "--highlight-color": "rgba(53, 255, 240, 0.45)",
+            "--footer-color": "#fff"
+        }
+        const lightStyles = {
+            "--background-color": "#fff",
+            "--text-color": "#000",
+            "--main-color": "#0063f9",
+            "--nav-link-color": "#000",
+            "--highlight-color": "rgba(53, 255, 240, 0.45)",
+            "--footer-color": "#fff"
+        }
+
+        const toggleDarkMode = () => {
+            isDark = !isDark
+            let navbar = $('#navbar')
+            if(isDark) {
+                navbar.removeClass('navbar-light')
+                navbar.addClass('navbar-dark')
+                for(style in darkStyles) {
+                    let root = document.documentElement
+                    root.style.setProperty(style, darkStyles[style])
+                }
+            } else {
+                navbar.removeClass('navbar-dark')
+                navbar.addClass('navbar-light')
+                for(const style in lightStyles) {
+                    let root = document.documentElement
+                    root.style.setProperty(style, lightStyles[style])
+                }
+            }
+        }
+ 
         $(document).ready(()=>{
             let inputStr = ""
-            let isDark = false
             const correctStr = "fuckjavascript"
-            const darkStyles = {
-                "--background-color": "#000",
-                "--text-color": "#fff",
-                "--main-color": "#1175d9",
-                "--nav-link-color": "#fff",
-                "--highlight-color": "rgba(53, 255, 240, 0.45)",
-                "--footer-color": "#fff"
-            }
-            const lightStyles = {
-                "--background-color": "#fff",
-                "--text-color": "#000",
-                "--main-color": "#0063f9",
-                "--nav-link-color": "#000",
-                "--highlight-color": "rgba(53, 255, 240, 0.45)",
-                "--footer-color": "#fff"
-            }
 
             document.addEventListener('keydown', (e) => {
                 inputStr += String.fromCharCode(e.keyCode).toLowerCase()
                 if(inputStr === correctStr) {
-                    isDark = !isDark
-                    if(isDark) {
-                        for(style in darkStyles) {
-                            let root = document.documentElement
-                            root.style.setProperty(style, darkStyles[style])
-                        }
-                    } else {
-                        for(const style in lightStyles) {
-                            let root = document.documentElement
-                            root.style.setProperty(style, lightStyles[style])
-                        }
-                    }
+                    toggleDarkMode()
                     inputStr = ""
                 } else if(!correctStr.startsWith(inputStr)) inputStr = ""
             })
