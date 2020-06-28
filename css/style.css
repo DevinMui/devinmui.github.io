@@ -50,6 +50,7 @@ a {
 .text-important {
     color: var(--main-color);
 }
+
 .text-bold {
     font-weight: 700;
 }
@@ -114,15 +115,57 @@ a {
     margin-bottom: 75px;
 }
 
-#project-thumbnails img {
-    margin-top: 30px;
+#project-thumbnails .img-container {
     cursor: pointer;
+    position: relative;
+}
+
+#project-thumbnails .mx-auto {
+    padding-top: 35px;
+}
+
+#project-thumbnails .mx-auto .img-container {
     transition: all 0.5s;
 }
 
-#project-thumbnails img:hover {
-    transition: all 0.5s;
+#project-thumbnails .mx-auto:hover .img-container {
     transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+#project-thumbnails .overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--highlight-color);
+    transition: all 0.5s;
+}
+
+#project-thumbnails .img-container svg {
+    position: absolute;
+    z-index: 2;
+    color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#project-thumbnails .img-container:hover svg {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0);
+    transition: all 0.5s;
+}
+
+#project-thumbnails .img-container:hover .overlay {
+    opacity: 1;
+    transition: all 0.5s;
 }
 
 #contact {
