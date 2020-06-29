@@ -15,7 +15,7 @@ html {
 
 html,
 body {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
     height: 100%;
     width: 100%;
     background-color: var(--background-color);
