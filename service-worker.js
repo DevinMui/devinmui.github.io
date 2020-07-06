@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/devinmui.github.io/precache-manifest.cd80c8ce87b273ea9c646926d6a4eb74.js"
+  "/devinmui.github.io/precache-manifest.e0a822f67d08191751a4194bb824c567.js"
 );
 
 self.addEventListener('message', (event) => {
