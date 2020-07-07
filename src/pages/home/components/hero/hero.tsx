@@ -1,13 +1,10 @@
 import React from 'react'
+import { ReactComponent as HeroImg } from './hero.svg'
 
 function Hero() {
     return (
         <section className="hero">
-            <img
-                alt="hero background"
-                src="./img/hero.svg"
-                className="hero-img"
-            />
+            <HeroImg className="hero-img" />
             <div className="hero-text">
                 <h1>Software Engineer</h1>
                 <p>Let's Build Cool Things Together</p>

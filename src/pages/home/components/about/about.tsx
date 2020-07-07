@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 function About() {
     return (
-        <Container id="about">
+        <Container id="about" as="section">
             <h2 className="text-center">Bonjour!</h2>
             <Row>
                 <Col md="5" className="mx-auto">
@@ -16,7 +16,7 @@ function About() {
                         the University of Southern California ✌️✌️✌️ currently
                         working on a boba barista machine with{' '}
                         <a
-                            href="https://aaronkh.github.io/website/"
+                            href="https://aaronkh.github.io"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

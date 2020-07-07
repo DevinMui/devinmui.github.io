@@ -10,7 +10,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 function WhatIDo() {
     return (
-        <Container id="what-i-do">
+        <Container id="what-i-do" as="section">
             <h2 className="text-center">What do I do?</h2>
             <Row>
                 <Col md={{ span: 3, offset: 1 }} xs={6} className="mx-auto">

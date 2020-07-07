@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import { ThemeProvider, createGlobalStyle } from 'styled-components'
 
@@ -8,6 +8,10 @@ import { DarkTheme, LightTheme } from './components/themes'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import Home from './pages/home'
+import About from './pages/about'
+
+import NotFound from './errors/404'
+import Unimplemented from './errors/unimplemented'
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -57,9 +61,25 @@ function App() {
         <ThemeProvider theme={theme === 'light' ? LightTheme : DarkTheme}>
             <>
                 <GlobalStyles />
-                <Navbar theme={theme} onThemeChange={toggleTheme} />
-                <Router>
-                    <Home />
+                <Router basename={process.env.PUBLIC_URL}>
+                    <Navbar theme={theme} onThemeChange={toggleTheme} />
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                        <Route exact path="/about">
+                            <About />
+                        </Route>
+                        <Route exact path="/projects">
+                            <Unimplemented />
+                        </Route>
+                        <Route exact path="/contact">
+                            <Unimplemented />
+                        </Route>
+                        <Route>
+                            <NotFound />
+                        </Route>
+                    </Switch>
                 </Router>
                 <Footer />
             </>

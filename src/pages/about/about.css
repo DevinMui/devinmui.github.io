@@ -1,0 +1,22 @@
+#about-hero {
+    margin-top: 50px;
+}
+
+#about-hero .row {
+    display: flex;
+    align-items: center;
+}
+
+#about-skills {
+    margin-top: 50px;
+}
+
+#about-skills h2 {
+    margin-bottom: -50px;
+}
+
+#about-skills .row {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}

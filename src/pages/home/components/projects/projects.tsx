@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
-import projectData from './projects.json'
+import ProjectData from './projects-data'
 
 require('lightgallery.js')
 
@@ -25,7 +25,7 @@ function Project(props: any) {
             md={3}
             xs={6}
             className="mx-auto"
-            data-src={props.image}
+            data-src={props.img}
             data-sub-html={`.caption${props.number}`}
         >
             <div className="img-container">
@@ -48,11 +48,7 @@ function Project(props: any) {
                     />
                 </svg>
                 <div className="img-fluid overlay"></div>
-                <img
-                    alt={props.title}
-                    className="img-fluid"
-                    src={props.image}
-                />
+                <img alt={props.title} className="img-fluid" src={props.img} />
             </div>
         </Col>
     )
@@ -67,11 +63,11 @@ function Projects() {
     })
 
     return (
-        <Container id="projects">
+        <Container id="projects" as="section">
             <h2 className="text-center">What have I built?</h2>
 
             <div style={{ display: 'none' }}>
-                {projectData.map((data: any, i: number) => {
+                {ProjectData.map((data: any, i: number) => {
                     return (
                         <Caption
                             key={`caption${i}`}
@@ -85,13 +81,13 @@ function Projects() {
             </div>
 
             <Row xs={2} id="project-thumbnails" ref={galleryRef}>
-                {projectData.map((data: any, i: number) => {
+                {ProjectData.map((data: any, i: number) => {
                     return (
                         <Project
                             key={`project${i}`}
                             title={data.title}
                             description={data.description}
-                            image={data.image}
+                            img={data.img}
                             number={i}
                         />
                     )
