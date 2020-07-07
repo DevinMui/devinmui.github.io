@@ -192,6 +192,7 @@ a {
 
 #contact .btn-primary {
     background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 footer {
@@ -212,7 +213,7 @@ footer p {
     }
 
     .navbar-brand {
-        margin: 0;
+        margin-left: 0;
         font-size: 28px;
     }
 

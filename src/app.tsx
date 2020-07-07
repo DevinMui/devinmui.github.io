@@ -19,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
         --text-color: ${({ theme }: any) => theme.text};
         --main-color: ${({ theme }: any) => theme.accent};
         --nav-link-color: ${({ theme }: any) => theme.text};
+        --highlight-color: ${({ theme }: any) => theme.highlight};
         transition: all 0.5s ease;
     }
 `
