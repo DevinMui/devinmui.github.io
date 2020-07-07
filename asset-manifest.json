@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3171af8.chunk.css",
-    "main.js": "/static/js/main.5e4257ad.chunk.js",
-    "main.js.map": "/static/js/main.5e4257ad.chunk.js.map",
+    "main.css": "/static/css/main.836e0c91.chunk.css",
+    "main.js": "/static/js/main.7799598b.chunk.js",
+    "main.js.map": "/static/js/main.7799598b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
     "static/css/2.cee2f9e7.chunk.css": "/static/css/2.cee2f9e7.chunk.css",
-    "static/js/2.7e90724d.chunk.js": "/static/js/2.7e90724d.chunk.js",
-    "static/js/2.7e90724d.chunk.js.map": "/static/js/2.7e90724d.chunk.js.map",
+    "static/js/2.c82be099.chunk.js": "/static/js/2.c82be099.chunk.js",
+    "static/js/2.c82be099.chunk.js.map": "/static/js/2.c82be099.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bdfe583059328d9352448c12d497cbc2.js": "/precache-manifest.bdfe583059328d9352448c12d497cbc2.js",
+    "precache-manifest.9f4511cc2565bc2d1fd7e403833ca561.js": "/precache-manifest.9f4511cc2565bc2d1fd7e403833ca561.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.cee2f9e7.chunk.css.map": "/static/css/2.cee2f9e7.chunk.css.map",
-    "static/css/main.b3171af8.chunk.css.map": "/static/css/main.b3171af8.chunk.css.map",
-    "static/js/2.7e90724d.chunk.js.LICENSE.txt": "/static/js/2.7e90724d.chunk.js.LICENSE.txt",
+    "static/css/main.836e0c91.chunk.css.map": "/static/css/main.836e0c91.chunk.css.map",
+    "static/js/2.c82be099.chunk.js.LICENSE.txt": "/static/js/2.c82be099.chunk.js.LICENSE.txt",
     "static/media/arduino.png": "/static/media/arduino.e9ae67e0.png",
     "static/media/autodesk.png": "/static/media/autodesk.ff147bc0.png",
     "static/media/blindsight.jpg": "/static/media/blindsight.d3c6df60.jpg",
@@ -23,6 +23,7 @@
     "static/media/hero.a2bbc8ad.svg": "/static/media/hero.a2bbc8ad.svg",
     "static/media/lightgallery.min.css": "/static/media/lg.ecff1170.eot",
     "static/media/loaf.jpg": "/static/media/loaf.bceb20f5.jpg",
+    "static/media/me.png": "/static/media/me.063ed5a9.png",
     "static/media/microwave.jpg": "/static/media/microwave.862e1565.jpg",
     "static/media/node.png": "/static/media/node.d6ee5b96.png",
     "static/media/pictrnnary.jpg": "/static/media/pictrnnary.75f32989.jpg",
@@ -35,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
     "static/css/2.cee2f9e7.chunk.css",
-    "static/js/2.7e90724d.chunk.js",
-    "static/css/main.b3171af8.chunk.css",
-    "static/js/main.5e4257ad.chunk.js"
+    "static/js/2.c82be099.chunk.js",
+    "static/css/main.836e0c91.chunk.css",
+    "static/js/main.7799598b.chunk.js"
   ]
 }
