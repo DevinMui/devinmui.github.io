@@ -10,11 +10,11 @@ function About() {
                 <Col md="5" className="mx-auto">
                     <p className="text-center">
                         I’m an undergrad majoring in{' '}
-                        <span className="text-important">computer science</span>{' '}
-                        and minoring in{' '}
-                        <span className="text-important">mathematics</span> at
-                        the University of Southern California ✌️✌️✌️ currently
-                        working on a boba barista machine with{' '}
+                        <span className="text-important">
+                            computer science (MS/BS)
+                        </span>{' '}
+                        at the University of Southern California ✌️✌️✌️
+                        currently working on a boba barista machine with{' '}
                         <a
                             href="https://aaronkh.github.io"
                             target="_blank"

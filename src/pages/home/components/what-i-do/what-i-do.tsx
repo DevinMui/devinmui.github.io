@@ -54,8 +54,9 @@ function WhatIDo() {
                     <h3>Relax as a Creative</h3>
                     <p>
                         I run a small YouTube channel where I post video demos
-                        of my past work. I also play violin, alto saxophone, and
-                        bass guitar, and I am currently learning trumpet.
+                        of my past work. I also play violin, trumpet, alto
+                        saxophone, and some bass guitar, and I am currently
+                        learning guitar (clarinet is up next).
                     </p>
                 </Col>
             </Row>

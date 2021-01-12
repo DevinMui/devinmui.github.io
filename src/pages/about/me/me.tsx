@@ -16,8 +16,7 @@ function Me() {
                         I’m Devin. Computer programmer. Tinkerer. Hacker.
                         Engineer. Or are you here for my other work? Regardless,
                         I’m an upcoming junior at the University of Southern
-                        California (USC) working on a MS/BS in Computer Science
-                        and minoring in Mathematics.
+                        California (USC) working on a MS/BS in Computer Science.
                     </p>
 
                     <p>
