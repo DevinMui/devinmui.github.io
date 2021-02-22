@@ -28,12 +28,7 @@ function Skills() {
                 </Col>
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Best Editor</h3>
-                    <p>
-                        Let’s get this out of the way. Vim is the best editor.
-                        Fight me. Also, 4 spaces over tabs. I’m running Neovim
-                        with a few extensions like COC.nvim to write about all
-                        my code.
-                    </p>
+                    <p>Dread it. Run from it. Vim arrives all the same.</p>
                 </Col>
             </Row>
 
@@ -43,15 +38,7 @@ function Skills() {
                 </Col>
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Language of Choice</h3>
-                    <p>
-                        C++ was my first programming language, and as such, it
-                        has a special place in my heart{' '}
-                        <span role="img" aria-label="<3">
-                            ❤️
-                        </span>
-                        . I write all my algorithms in C++, and I’ll let C++
-                        segfault me anyday.
-                    </p>
+                    <p>Segfault me harder.</p>
                 </Col>
             </Row>
 
@@ -61,12 +48,7 @@ function Skills() {
                 </Col>
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Web Language</h3>
-                    <p>
-                        Obviously, this goes to JavaScript. As we all know,
-                        JavaScript is terrible. But we all secretly love it.
-                        Currently, I’ve adopted a MERN stack and even use React
-                        Native for mobile apps.
-                    </p>
+                    <p>Call me back please. </p>
                 </Col>
             </Row>
 
@@ -77,17 +59,15 @@ function Skills() {
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Scripting Language</h3>
                     <p>
-                        I love Ruby, but unfortunately, I end up using Python 3
-                        more (
+                        I'm not a{' '}
                         <a
                             href="https://www.facebook.com/462508190484900/posts/23582-to-all-the-people-who-use-python-2-fucking-stop-its-fucking-outdated-you-d/2270026899733011/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            PS: if you’re still using Python 2, you’re a racist
+                            racist
                         </a>
-                        ). Python is my duct tape language and I'll use it for
-                        my hacky code.
+                        .
                     </p>
                 </Col>
             </Row>
@@ -97,12 +77,7 @@ function Skills() {
                 </Col>
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Hardware Language</h3>
-                    <p>
-                        The Arduino language/IDE sucks so much, but this is what
-                        I use for every hackathon project. At USC, I used the C
-                        AVR library and ATMega328 documentation to manually
-                        program an Arduino for class.
-                    </p>
+                    <p>C/C++ frankenstein.</p>
                 </Col>
             </Row>
             <Row>
@@ -128,12 +103,7 @@ function Skills() {
                 </Col>
                 <Col md={{ span: 5, offset: 2 }} className="mt-md-0 mt-5">
                     <h3>Misc Programs</h3>
-                    <p>
-                        I use Premiere for video editing, Procreate to draw
-                        concepts, Illustrator to polish up rough sketches, After
-                        Effects to animate sketches, and Autodesk Inventor to
-                        make models and parts for 3D printing.
-                    </p>
+                    <p>I fail to try to do it all.</p>
                 </Col>
             </Row>
         </Container>
