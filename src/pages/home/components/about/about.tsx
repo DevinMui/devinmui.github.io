@@ -9,26 +9,15 @@ function About() {
       <Row>
         <Col md="5" className="mx-auto">
           <p className="text-center">
-            I’m an undergrad majoring in{" "}
-            <span className="text-important">computer science</span> at the
-            University of Southern California ✌️✌️✌️ currently working on a
-            robot drummer with{" "}
-            <a
-              href="https://viterbimakers.usc.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @uscmakers
-            </a>
-            🛠 also probably working with{" "}
+            I'm a software engineer working on cool things (probably with{" "}
             <a
               href="https://aaronkh.github.io"
               target="_blank"
               rel="noopener noreferrer"
             >
               @aahuang
-            </a>{" "}
-            on something too
+            </a>
+            )
           </p>
         </Col>
       </Row>

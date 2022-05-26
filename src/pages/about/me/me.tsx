@@ -13,12 +13,7 @@ function Me() {
         <Col className="mt-md-0 mt-5">
           <h2>About Me</h2>
           <p>
-            I'm Devin. I'm an undergraduate studying computer science at the
-            University of Southern California (USC).
-          </p>
-
-          <p>
-            I work part-time for{" "}
+            I'm Devin. I currently work at{" "}
             <a
               href="https://invisv.com/"
               target="_blank"
@@ -26,9 +21,9 @@ function Me() {
             >
               Invisv
             </a>{" "}
-            building services that anonymize and protect users' identity and
-            location from cell towers. Previously, I interned at Amazon Web
-            Services building the{" "}
+            building services that anonymize and protect users' cellular
+            identity and location. Previously, I interned at Amazon Web Services
+            building the{" "}
             <a
               href="https://aws.amazon.com/kendra/"
               target="_blank"
