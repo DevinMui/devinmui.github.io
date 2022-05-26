@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.b7483237.chunk.css",
-    "main.js": "/static/js/main.f3d60026.chunk.js",
-    "main.js.map": "/static/js/main.f3d60026.chunk.js.map",
+    "main.js": "/static/js/main.c72009d8.chunk.js",
+    "main.js.map": "/static/js/main.c72009d8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
     "static/css/2.9c5be0b9.chunk.css": "/static/css/2.9c5be0b9.chunk.css",
-    "static/js/2.9fc39abd.chunk.js": "/static/js/2.9fc39abd.chunk.js",
-    "static/js/2.9fc39abd.chunk.js.map": "/static/js/2.9fc39abd.chunk.js.map",
+    "static/js/2.86873b4e.chunk.js": "/static/js/2.86873b4e.chunk.js",
+    "static/js/2.86873b4e.chunk.js.map": "/static/js/2.86873b4e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5e6a5bb0b2bfbf9740b2f053243be93f.js": "/precache-manifest.5e6a5bb0b2bfbf9740b2f053243be93f.js",
+    "precache-manifest.bbe6530d340d8a06a48eca27f5afb7be.js": "/precache-manifest.bbe6530d340d8a06a48eca27f5afb7be.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9c5be0b9.chunk.css.map": "/static/css/2.9c5be0b9.chunk.css.map",
     "static/css/main.b7483237.chunk.css.map": "/static/css/main.b7483237.chunk.css.map",
-    "static/js/2.9fc39abd.chunk.js.LICENSE.txt": "/static/js/2.9fc39abd.chunk.js.LICENSE.txt",
+    "static/js/2.86873b4e.chunk.js.LICENSE.txt": "/static/js/2.86873b4e.chunk.js.LICENSE.txt",
     "static/media/arduino.png": "/static/media/arduino.e9ae67e0.png",
     "static/media/autodesk.png": "/static/media/autodesk.ff147bc0.png",
     "static/media/blindsight.jpg": "/static/media/blindsight.d3c6df60.jpg",
@@ -31,14 +31,13 @@
     "static/media/python.png": "/static/media/python.067050f6.png",
     "static/media/saas.jpg": "/static/media/saas.a60ad5fc.jpg",
     "static/media/untitled.jpg": "/static/media/untitled.9b8c150f.jpg",
-    "static/media/victory.jpg": "/static/media/victory.7c0ff04c.jpg",
     "static/media/vim.svg": "/static/media/vim.312eb66a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
     "static/css/2.9c5be0b9.chunk.css",
-    "static/js/2.9fc39abd.chunk.js",
+    "static/js/2.86873b4e.chunk.js",
     "static/css/main.b7483237.chunk.css",
-    "static/js/main.f3d60026.chunk.js"
+    "static/js/main.c72009d8.chunk.js"
   ]
 }
