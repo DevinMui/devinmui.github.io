@@ -1,43 +1,36 @@
 {
   "files": {
     "main.css": "/static/css/main.b7483237.chunk.css",
-    "main.js": "/static/js/main.c7e2674d.chunk.js",
-    "main.js.map": "/static/js/main.c7e2674d.chunk.js.map",
+    "main.js": "/static/js/main.10672737.chunk.js",
+    "main.js.map": "/static/js/main.10672737.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce89729d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce89729d.js.map",
     "static/css/2.9c5be0b9.chunk.css": "/static/css/2.9c5be0b9.chunk.css",
-    "static/js/2.86873b4e.chunk.js": "/static/js/2.86873b4e.chunk.js",
-    "static/js/2.86873b4e.chunk.js.map": "/static/js/2.86873b4e.chunk.js.map",
+    "static/js/2.742aa662.chunk.js": "/static/js/2.742aa662.chunk.js",
+    "static/js/2.742aa662.chunk.js.map": "/static/js/2.742aa662.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8c77dec2d650d3d5fefebf4e4272ed58.js": "/precache-manifest.8c77dec2d650d3d5fefebf4e4272ed58.js",
+    "precache-manifest.f0a624a386bdf787b56e28e42bda2463.js": "/precache-manifest.f0a624a386bdf787b56e28e42bda2463.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9c5be0b9.chunk.css.map": "/static/css/2.9c5be0b9.chunk.css.map",
     "static/css/main.b7483237.chunk.css.map": "/static/css/main.b7483237.chunk.css.map",
-    "static/js/2.86873b4e.chunk.js.LICENSE.txt": "/static/js/2.86873b4e.chunk.js.LICENSE.txt",
-    "static/media/arduino.png": "/static/media/arduino.e9ae67e0.png",
-    "static/media/autodesk.png": "/static/media/autodesk.ff147bc0.png",
+    "static/js/2.742aa662.chunk.js.LICENSE.txt": "/static/js/2.742aa662.chunk.js.LICENSE.txt",
     "static/media/blindsight.jpg": "/static/media/blindsight.d3c6df60.jpg",
     "static/media/bobafetch.jpg": "/static/media/bobafetch.88c88017.jpg",
     "static/media/cheater.jpg": "/static/media/cheater.dee4c397.jpg",
-    "static/media/cpp.png": "/static/media/cpp.f278be79.png",
     "static/media/hero.a2bbc8ad.svg": "/static/media/hero.a2bbc8ad.svg",
     "static/media/lightgallery.min.css": "/static/media/lg.ecff1170.eot",
     "static/media/loaf.jpg": "/static/media/loaf.bceb20f5.jpg",
     "static/media/me.png": "/static/media/me.d9da9ac0.png",
     "static/media/microwave.jpg": "/static/media/microwave.862e1565.jpg",
-    "static/media/node.png": "/static/media/node.d6ee5b96.png",
     "static/media/pictrnnary.jpg": "/static/media/pictrnnary.75f32989.jpg",
-    "static/media/premiere.png": "/static/media/premiere.e0ebb1b1.png",
-    "static/media/python.png": "/static/media/python.067050f6.png",
     "static/media/saas.jpg": "/static/media/saas.a60ad5fc.jpg",
-    "static/media/untitled.jpg": "/static/media/untitled.9b8c150f.jpg",
-    "static/media/vim.svg": "/static/media/vim.312eb66a.svg"
+    "static/media/untitled.jpg": "/static/media/untitled.9b8c150f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ce89729d.js",
     "static/css/2.9c5be0b9.chunk.css",
-    "static/js/2.86873b4e.chunk.js",
+    "static/js/2.742aa662.chunk.js",
     "static/css/main.b7483237.chunk.css",
-    "static/js/main.c7e2674d.chunk.js"
+    "static/js/main.10672737.chunk.js"
   ]
 }

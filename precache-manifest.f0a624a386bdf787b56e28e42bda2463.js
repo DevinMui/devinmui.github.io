@@ -1,39 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6efd44e0d70693922e91b53f5b9e690e",
+    "revision": "53e20fe3fb310d103344ad45eb794d21",
     "url": "/index.html"
   },
   {
-    "revision": "8301ceb9e74871f336ac",
+    "revision": "d0a2d5a7c8304d805b94",
     "url": "/static/css/2.9c5be0b9.chunk.css"
   },
   {
-    "revision": "9c05dc1e0f1c140751f2",
+    "revision": "fb22489d5772e861b37d",
     "url": "/static/css/main.b7483237.chunk.css"
   },
   {
-    "revision": "8301ceb9e74871f336ac",
-    "url": "/static/js/2.86873b4e.chunk.js"
+    "revision": "d0a2d5a7c8304d805b94",
+    "url": "/static/js/2.742aa662.chunk.js"
   },
   {
     "revision": "492d7e05a4c2e81da7932422a4d31130",
-    "url": "/static/js/2.86873b4e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.742aa662.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c05dc1e0f1c140751f2",
-    "url": "/static/js/main.c7e2674d.chunk.js"
+    "revision": "fb22489d5772e861b37d",
+    "url": "/static/js/main.10672737.chunk.js"
   },
   {
     "revision": "f139b624154a37532bb8",
     "url": "/static/js/runtime-main.ce89729d.js"
-  },
-  {
-    "revision": "e9ae67e0d26495543e960cbe2447e988",
-    "url": "/static/media/arduino.e9ae67e0.png"
-  },
-  {
-    "revision": "ff147bc05750b52eab7aaa73333e67f1",
-    "url": "/static/media/autodesk.ff147bc0.png"
   },
   {
     "revision": "d3c6df60574d90a3442ecf8174d18712",
@@ -46,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dee4c397a70654317f5face793b38972",
     "url": "/static/media/cheater.dee4c397.jpg"
-  },
-  {
-    "revision": "f278be7973516129af9e64d45a0c6f4d",
-    "url": "/static/media/cpp.f278be79.png"
   },
   {
     "revision": "a2bbc8ad7099881629c9a8b8febe421d",
@@ -84,20 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/microwave.862e1565.jpg"
   },
   {
-    "revision": "d6ee5b96f3e86300de2d3c729598e471",
-    "url": "/static/media/node.d6ee5b96.png"
-  },
-  {
     "revision": "75f32989d5a34ad310380c5c48d6c163",
     "url": "/static/media/pictrnnary.75f32989.jpg"
-  },
-  {
-    "revision": "e0ebb1b1095cc8607f4497fdcfb09cd1",
-    "url": "/static/media/premiere.e0ebb1b1.png"
-  },
-  {
-    "revision": "067050f6ecc418ea7a7d2f3557683c8c",
-    "url": "/static/media/python.067050f6.png"
   },
   {
     "revision": "a60ad5fc59e7466b6c21d700e599d2d6",
@@ -106,9 +82,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9b8c150fe4a5dd46260264f3a74d6826",
     "url": "/static/media/untitled.9b8c150f.jpg"
-  },
-  {
-    "revision": "312eb66ab1f8da0fdd071a8375963970",
-    "url": "/static/media/vim.312eb66a.svg"
   }
 ]);
