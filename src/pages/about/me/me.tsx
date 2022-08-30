@@ -15,15 +15,15 @@ function Me() {
           <p>
             I'm Devin. I currently work at{" "}
             <a
-              href="https://invisv.com/"
+              href="https://about.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Invisv
-            </a>{" "}
-            building services that anonymize and protect users' cellular
-            identity and location. Previously, I interned at Amazon Web Services
-            building the{" "}
+              Meta
+            </a>
+            . I previously worked at Invisv where I built services that
+            anonymize and protect users' cellular identity and location. I also
+            interned at Amazon Web Services building the{" "}
             <a
               href="https://aws.amazon.com/kendra/"
               target="_blank"
@@ -33,12 +33,11 @@ function Me() {
             </a>{" "}
             console. I also worked part-time at the USC School of Business
             patching and developing remote learning collaborative games for MBA
-            students. I'll be joining Meta after graduation as a Software
-            Engineer.
+            students.
           </p>
           <p>
-            In my freetime, I play saxophone, trumpet, electric guitar, bass
-            guitar, and violin. I also compete in a ton of{" "}
+            In my freetime, I play saxophone and guitar. I also compete in a ton
+            of{" "}
             <a
               href="http://devpost.com/devinmui"
               target="_blank"
